@@ -1,0 +1,712 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:image" content="https://media.decathlon.tw/media/wysiwyg/TW_landingpage/hike/180827hiking-fb.jpg"/>
+<link href="https://media.decathlon.tw/media/wysiwyg/TW_landingpage/hike/180827hiking-fb.jpg" rel="image_src" type="image/jpeg">
+<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+<title>背起夢想，向山而行</title>
+<style>
+body{margin: 0; padding: 0;}
+.hidden{ display:none;}
+#referafriend{ display:none;}
+.mobi-toolbar{ display:none;}
+.header{ display:none;}
+.mobile{ display:none !important;}
+.pad{display: none !important;}
+
+/*top banner*/
+	.topban{width: 100%; height: 100vh; background-image: url(https://media.decathlon.tw/media/wysiwyg/TW_landingpage/hike/1808237top.jpg); background-position: center; background-size: cover; text-align: center; background-repeat: no-repeat;}
+	.logo {
+    margin: 0;
+    padding: 1%;
+    width: 98%;
+    height: 40px; text-align:left;
+    position: absolute;
+	z-index:999;
+}
+.logo img{ float:left;}
+/*drop list*/
+ .dropm{ float:right; display: block; color:#fff !important; position:relative; margin-right:50px; margin-top:0; font-family:微軟正黑體;}
+ .dropm li{ display:inline-block; margin:0 15px;color:#000 !important; text-align:center; line-height:35px !important; font-size:16px !important;}
+  .dropm li::after{ content:' '; width:0%; height:1px; background:#000; display:block; transition:.2s width;}
+  .dropm li:hover::after{ width:100%; transition:.2s width;}
+ .dropm li:hover  .subdrop{ display:block; height:155px; overflow:hidden; transition: ease-out 0.2s;}
+ .subdrop{ display:block; height:0;overflow:hidden; position: absolute; padding:0 15px; margin:0px 0 0 0px; width:150px;background:rgba(255,255,255,.4); transition: ease-in 0.2s;}
+  .subdrop li{ display:block; margin:15px 0; text-align:left;line-height:20px !important; font-size:16px !important;   }
+  .subdrop a{text-decoration:none;}
+/******MOUSE******/
+.mou{ position:absolute; margin:0px 0 0 50% !important; bottom: 10px;}
+@keyframes mouse_boucle {
+    0%   { opacity:0; }
+	30%  { opacity:1;  }
+	40%  { transform: translateY(10px);opacity:1;  }
+	80%  { transform: translateY(10px);opacity:1; }
+	100%  { transform: translateY(10px);opacity:0; }
+}
+@keyframes mouse_fle {
+     0%   { opacity:0; }
+	30%  { opacity:1;  }
+	40%  { transform: translateY(15px);opacity:1;  }
+	80%  { transform: translateY(15px);opacity:1; }
+	100%  { transform: translateY(15px);opacity:0; }
+}
+
+.cursor_animate .mouse {
+   width: 100%;
+    height: 46px;
+    background-image: url(https://cdn.rawgit.com/saha1022/3c620f5e38941273bf48dbbe1f27296e/raw/0c4f5182e9f119bd2a8274371b5c8f1a262ddc34/icon_mouse.svg);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.mouse {
+    animation-name: mouse_boucle;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
+.cursor_animate {
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-15px);
+    cursor: pointer;
+}
+.cursor_animate .fle {
+    width: 100%;
+    height: 30px;
+    background-image: url(https://cdn.rawgit.com/saha1022/3c620f5e38941273bf48dbbe1f27296e/raw/0c4f5182e9f119bd2a8274371b5c8f1a262ddc34/picto_dfle.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+.fle {
+    animation-name: mouse_fle;
+    animation-duration: 2s;
+    animation-delay: 2.2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
+/*btn*/
+	/*GO-ON*/
+.des3 .btns{
+    display: block;
+    position: relative;
+	width: 80px;
+    padding: 0px 50px 0 20px;
+    height: 40px;
+    font: 15px/15px Microsoft JhengHei;
+    text-transform: uppercase;
+    text-decoration: none;
+    overflow: hidden;
+	margin:20px 0 0 0px;
+}
+.btns{
+    display: block;
+    position: absolute;
+	width: 80px;
+    padding: 0px 50px 0 20px;
+    height: 40px;
+    font: 15px/15px Microsoft JhengHei;
+    text-transform: uppercase;
+    text-decoration: none;
+    overflow: hidden;
+	margin:20px 0 0 0;
+	right: 0;
+}
+.btns:before {
+    content: '';
+    position: absolute;
+    left: calc(100% - 30px);
+    top: 0px;
+    width: calc(100% + 20px);
+    height: 100%;
+    background-color: #fff;
+    transform: skewX(-15deg);
+    opacity: 0.3;
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.btns:hover:before {
+    transform: translate(calc(-100% + 40px), 0) skewX(-15deg);
+}
+/*BTN1 CONTENT*/
+.btn-arrow {
+    position: absolute;
+    right: 4px;
+    top: 10px;
+}
+.arrow {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+.btn-txt {
+    position: relative;
+    margin-top: 13px;
+    white-space: nowrap;
+}
+/*BG COLOR*/
+.yel{color: #232323;
+    background: linear-gradient(to bottom, #fff800 0%,#f7c500 100%);}
+.blu{background: linear-gradient(to bottom, #4eb0ed 0%,#0274ba 100%);color: #FFF;}
+.white{background: linear-gradient(to bottom, #F9FAF9 0%,#E2E2E2 100%);color: #000; box-shadow: -1px -1px 0px #EBEBEA;}
+
+.title-1-line{content:"";display:inline-block;width:150px;height:30px; text-align: center; line-height: 30px;font-family: "Roboto Condensed", 微軟正黑體, sans-serif; color: #fff; font-size: 24px; font-weight: bold;background-color:#1D5FA4;*zoom:1;filter:progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FF3FDDFE', endColorstr='#238dc9');background-image:linear-gradient(to right, #1D5FA4 0%,#238dc9 100%);background-image:linear-gradient(to right, #278384 0%,#238dc9 100%);background-image:linear-gradient(to right, #1D5FA4 0%,#238dc9 100%);background-image:linear-gradient(to right, #1D5FA4 0%,#238dc9 100%);background-image:linear-gradient(to right, #1D5FA4 0%,#238dc9 100%);transform:skew(-15deg);transform:skew(-15deg);transform:skew(-15deg);transform:skew(-15deg);margin-right:8px}
+/*secban*/
+	.secban-wrap{width: 100%; height: 250px; background: #FFF; position: relative;}
+	.secban{width: 1150px; position: absolute; margin: auto; left: auto; right: auto;}
+	.secban img{position: absolute; left: 100px;}
+	.des{width: 50%; text-align: right; position: absolute; right: 0px; top:60px;color: #333;font-family: "Roboto Condensed", 微軟正黑體, sans-serif;}
+	.des h3{font-size: 48px; line-height: 80px; margin: 0; letter-spacing: 1px;}
+	.des h4{font-size: 24px; line-height: 30px; margin: 0; letter-spacing: 1px; color: #1D5FA4;}
+	.des p{font-size: 18px; line-height: 24px; margin: 0; letter-spacing: 1px;}
+/*article*/
+	.article {width: 100%;margin: 0 auto;height: auto;margin: 0;padding: 85px 0px 0 0%; box-sizing: border-box; background-repeat: no-repeat;background-attachment: fixed;background-position: center center;background-size: cover;font-family: "Roboto Condensed", 微軟正黑體, sans-serif; color: #fff; text-align: center;}
+	.bg2 { background-image: url(https://media.decathlon.tw/media/wysiwyg/TW_landingpage/hike/ih1_1.jpg); height: 350px;}
+	.bg3 { background-image: url(https://media.decathlon.tw/media/wysiwyg/TW_landingpage/hike/ih2_1.jpg); height: 350px;}
+	.bg4 { background-image: url(https://media.decathlon.tw/media/wysiwyg/TW_landingpage/hike/ih3_1.jpg); height: 350px;}
+	.bg5 { background-image: url(https://media.decathlon.tw/media/wysiwyg/TW_landingpage/hike/ih4_1.jpg); height: 350px;}
+	.bg7 { background-image: url(https://media.decathlon.tw/media/wysiwyg/TW_landingpage/hike/ih5_1.jpg); height: 400px;}
+	.des2 h3{font-size: 48px; line-height: 80px; margin: 0; letter-spacing: 1px;}
+	.des2 h4{font-size: 24px; line-height: 30px; margin: 0; letter-spacing: 1px; color: #f5d92c;}
+	.des2 p{font-size: 18px; line-height: 24px; margin: 0; letter-spacing: 1px;}
+/*product*/
+	.prodwrap{ width:100%; padding:10px 0 10px 0; text-align: center;}
+	.prodwrap table{ padding:0; margin:0 auto; width:1000px; border-spacing:0; border:0;}
+	.price2{font-weight:bold !important; color: #189ED7;}
+	.crossprice{font-weight:bold !important; color: #D41E21; text-decoration: line-through;}
+	.prod{width:240px; margin:0px;float:left; background:#FFF; height:300px; text-align: center;}
+	.prod2{width:200px; margin:0px;float:left; background:#FFF; height:200px; text-align: center;}
+	.prod3{width:240px; margin:0px;float:left; background:#FFF; height:300px; text-align: center;}
+	.prod img{width:90%; margin:5% !important;}
+	.prod3 img{width:100%; margin:0% !important;}
+	.prod p{ margin:10px 0 0 0 !important; line-height:22px; font-size:18px; text-align:center; color:#333;font-family: "Roboto Condensed", 微軟正黑體, sans-serif; font-weight: bold;}
+	.prod3 p{ margin:10px 0 0 0 !important; line-height:22px; font-size:18px; text-align:center; color:#333;font-family: "Roboto Condensed", 微軟正黑體, sans-serif; font-weight: bold;}
+	.mdes{width: 95%; background: #f7f7f7; color: #666; font-size: 12px; line-height: 16px; text-align: left; padding: 8px; height: 60px; box-sizing: border-box; margin: auto;letter-spacing: 0.5px;}
+/*MORE*/
+	.des3{width: 50%; text-align: left; position: relative; left: 180px; top:10px;color: #fff;font-family: "Roboto Condensed", 微軟正黑體, sans-serif;}
+	.des3 h3{font-size: 48px; line-height: 80px; margin: 0; letter-spacing: 1px;}
+	.des3 h4{font-size: 24px; line-height: 30px; margin: 0; letter-spacing: 1px; color: #f5d92c;}
+	.des3 p{font-size: 18px; line-height: 24px; margin: 0; letter-spacing: 1px;}
+/*****WEAR*****/
+.wear{background: #FFF; width: 100%; height: 100px; position: relative;text-align: center;font-family: 微軟正黑體}
+	.wear h4{width:100%; text-align: center; font-size: 30px;letter-spacing: 1px; line-height: 1.2; color:#1e6bae;font-weight: bold;}
+	.wear p{width:100%; text-align: center; font-size: 18px;letter-spacing: 1px; line-height: 1.2; color: #292A25;}
+@media screen and (max-width: 576px){
+	.logo {
+    margin:10px auto;
+	text-align:center;
+    padding: 1%;
+    width: 98%;
+    height: 40px;
+    position: absolute;
+	z-index:999;}
+	.mobile{display: block !important;}
+.dropm{ display:none;}
+.backToTop{ display:none;}
+.header{display:none;}
+.mobi-toolbar {display:none;}
+.pc {display: none !important;}
+	/*top banner*/
+	.topban{width: 100%; height: 100vh; background-image: url(https://media.decathlon.tw/media/wysiwyg/TW_landingpage/hike/1808237mb.jpg); background-position: center; background-size:auto 100%; text-align: center; background-repeat: no-repeat;}
+	.topban h2{font-size: 22px; color: #fff; margin:0; padding: 150px 0;font-family: "Roboto Condensed", 微軟正黑體, sans-serif; font-weight: normal;}
+	.topban h2:first-line{font-size: 44px; font-weight: bold;}
+	/*secban*/
+	.secban-wrap{width: 100%; height: auto; background: #FFF; position: relative;}
+	.secban{width: 100%; position: relative; margin: auto; left: auto; right: auto;}
+	.secban img{position: relative; left: 0px; width: 100%;margin-bottom: 20px; background: #BF1C27;}
+	.des{width: 100%; text-align: center; position: relative; right: 0px; top:0px;color: #333;font-family: "Roboto Condensed", 微軟正黑體, sans-serif;}
+	.des h3{font-size: 48px; line-height: 80px; margin: 0; letter-spacing: 1px;}
+	.des h4{font-size: 24px; line-height: 30px; margin: 0; letter-spacing: 1px; color: #1D5FA4;}
+	.des p{font-size: 18px; line-height: 24px; margin: 0; letter-spacing: 1px;}
+	.btns{
+    display: block;
+    position: relative;
+	width: 80px;
+    padding: 0px 50px 0 20px;
+    height: 40px;
+    font: 15px/15px Microsoft JhengHei;
+    text-transform: uppercase;
+    text-decoration: none;
+    overflow: hidden;
+	margin:20px auto 0 auto;
+	bottom: 20px;
+}	
+	/*article*/
+	.article {width: 100%;margin: 0 auto;height: auto;margin: 0;padding: 30px 0px 20px 0%; box-sizing: border-box; background-repeat: no-repeat; background-attachment: local;;background-position: center center;background-size: auto 100%;font-family: "Roboto Condensed", 微軟正黑體, sans-serif; color: #fff; text-align: center;}
+	.des{width: 95%; text-align: center; position: relative; right: 0px; top:0px;color: #333;font-family: "Roboto Condensed", 微軟正黑體, sans-serif; margin: 0 auto;}
+	.des h3{font-size: 44px; line-height: 80px; margin: 0; letter-spacing: 1px;}
+	.des h4{font-size: 24px; line-height: 30px; margin: 0; letter-spacing: 1px; color: #1D5FA4;}
+	.des p{font-size: 16px; line-height: 24px; margin: 0; letter-spacing: 1px;}
+	/*products*/
+.prodwrap{ width:100%; padding:40px 0 20px 0;}
+.prodwrap2{ width:90%; padding:0 0 20px 0; margin: auto; position: relative; background: #fff;}
+.prodwrap table{ padding:0; margin:0; width:100%; border-spacing:0; border:0;}
+.prod{width:48%; margin-top:5px!important; margin-left:1%!important;float:left; background:#FFF; height:auto;}
+.prod3{width:48%; margin-top:5px!important; margin-left:1%!important;float:left; background:#FFF; height:auto;}
+.prod img{width:90%; margin:5%;}
+.prod3 img{width:90%; margin:5%;}
+.prod p{ margin:10px 0 0 0 !important; line-height:20px; font-size:14px; text-align:center; color:#333;font-family: "Roboto Condensed", 微軟正黑體, sans-serif;}
+.prod3 p{ margin:10px 0 0 0 !important; line-height:20px; font-size:14px; text-align:center; color:#333;font-family: "Roboto Condensed", 微軟正黑體, sans-serif;}
+	.mdes{display: none;}
+	/*MORE*/
+	.des3{width: 95%; text-align: left; position: relative; left: 5%; top:10px;color: #fff;font-family: "Roboto Condensed", 微軟正黑體, sans-serif;}
+	
+	}
+</style>
+</head>
+
+<body>
+<div class="logo">
+  <a href="http://www.decathlon.tw"><img src="http://static.decathlon.tw/skin/frontend/enterprise/decathlon_tw/img/logo.png" width="200px"></a>
+ </div>
+	
+	<section class="topban">
+		<h2 class="mobile"></h2>
+		<section class="mou" id="goa">
+			<div class="cursor_animate animate">
+     		 <div class="mouse"></div>
+    		 <div class="fle"></div>
+  			</div>
+		</section>
+	</section>
+	<!--<section class="prodwrap">	
+ 	<table>
+ 	<tr>
+ 		<td>
+ <a href="{{store direct_url='hiking-c112593.html#model=8331382'}}" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img  class="img-lazyload loaded"src="1808237icon_01.jpg">
+ 	</div>
+ </a>
+ <a href="{{store direct_url='hiking-c109732.html#model=8330473'}}" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img  class="img-lazyload loaded"src="1808237icon_02.jpg">
+ 	</div>
+ </a>
+ <a href="{{store direct_url='hiking-c113210.html#model=8348925'}}" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img  class="img-lazyload loaded"src="1808237icon_03.jpg">
+ 	</div>
+ </a>
+ <a href="{{store direct_url='hiking-c113211.html#model=8357283'}}" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img  class="img-lazyload loaded"src="1808237icon_04.jpg">
+ 	</div>
+ </a>
+		</tr></td>
+		</table></section>-->
+		</section>
+	</section>
+	
+	<!---section-->
+	<!--<section class="article bg2">
+		<div class="des2">
+		 <div class="title-1-line">PART 1</div>
+		  <h3>背起夢想，向山而行</h3>
+			<p>輕量化設計，專業合身背負系統<br>讓登山不再辛苦!</p>
+		</div>
+	</section>-->
+	<!-----product area------>
+	<section class="prodwrap" id="s2">	
+ 	<table>
+	<br><div class="title-1-line">PART 1</div>
+	<section class="wear" >
+	<h4>─<br>│ 一日行程 │<br>─</h4>
+	</section>
+ 	<tr>
+ 		<td>
+ <a href="{{store direct_url='hiking-c112593.html#model=8331382'}}" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img  class="img-lazyload loaded"src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/a/f/afc02982bef4409da7e8985d0817b955_8331382.jpg">
+ 		<p>10L休閒健行背包<br><span class="price2">NT$99</span></p>
+ 	</div>
+ </a>
+ <a href="{{store direct_url='hiking-c109732.html#model=8330473'}}" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img  class="img-lazyload loaded"src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/c/6/c640bfd4163349ee878f0453ee9e276d_8333030.jpg">
+ 		<p>20L休閒健行背包<br><span class="price2">NT$299</span></p>
+ 	</div>
+ </a>
+ <a href="{{store direct_url='trekking-c113210.html#model=8348927'}}" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img  class="img-lazyload loaded"src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/4/0/40935bb40fa04afca985d787553923fd_8348927.jpg">
+ 		<p>10L防潑水登山背包<br><span class="price2">NT$79</span></p>
+ 	</div>
+ </a>
+ <a href="{{store direct_url='trekking-c113211.html#model=8357286'}}" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img  class="img-lazyload loaded"src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/6/4/644ef2f9-4915-4bd7-a216-f965c9578317_8357286.jpg">
+ 		<p>20L防潑水登山背包<br><span class="price2">NT$249</span></p>
+ 	</div>
+ </a>
+		</tr></td>
+		</table></section>
+		<section class="prodwrap">	
+<table>
+	<section class="wear" >
+	<h4>─<br>│ 二日行程 │<br>─</h4>
+	</section>
+	<tr>
+	<td>
+ <a href="{{store direct_url='trekking-c106068.html#model=8300838'}}" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img  class="img-lazyload loaded"src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/8/0/80a1b3b91dcc4d00ba520b9e445b40ad_8300838.jpg">
+ 		<p>50L經典款登山背包<br><span class="price2">NT$999</span></p>
+ 	</div></a>
+ <a href="{{store direct_url='trekking-c106142.html'}}" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img  class="img-lazyload loaded"src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/1/8/182680dad9bc4f6da7835509ae2b478d_8300843.jpg">
+ 		<p>60L經典款登山背包<br><span class="price2">NT$1499</span></p>
+ 	</div>
+ </a>
+ <a href="{{store direct_url='catalogsearch/result/?q=8300849+8300840&dir=desc'}}" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img  class="img-lazyload loaded"src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/2/1/21dfe8beaf6f4ecc963baa705f80711b_8300849.jpg">
+ 		<p>50L方便調節登山背包<br><span class="price2">NT$1999</span></p>
+ 	</div>
+ </a>
+ <a href="{{store direct_url='decathlon/search/result/?q=專業登山背包&dir=desc'}}" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img  class="img-lazyload loaded"src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/9/c/9c97a764-2567-4c16-8add-2072749652e8_8486843.jpg">
+ 		<p>50+10L專業登山背包<br><span class="price2">NT$3299起</span></p>
+ 	</div>
+ </a>
+ 
+ </td>
+ 	</tr>
+ </table>		   
+</section>
+	
+	<!---section-->
+	<section class="article bg3" id="s3">
+		<div class="des2">
+		 <div class="title-1-line">PART 2</div>
+		  <h3>登山服飾</h3>
+			<p>輕量、彈性、排汗<br>專為登山運動設計<br>讓您更舒適的享受自然</p>
+		</div>
+	</section>
+	<!-----product area------>
+	<section class="prodwrap">	
+ 	<table>
+ 	<tr>
+ 		<td>
+ <a href="{{store direct_url='hiking-c109037.html#model=8316244'}}" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img  class="img-lazyload loaded"src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/4/a/4aa86a2507bb41d39274e902d1ccf3df_8316244.jpg">
+ 		<p>男親膚排汗登山T恤<br><span class="price2">NT$149</span></p>
+ 	</div>
+ </a>
+ <a href="{{store direct_url='hiking-c126282.html#model=8493826'}}" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img  class="img-lazyload loaded"src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/e/4/e4831f63-18ea-48af-8929-ee25e14ff596_8493826.jpg">
+ 		<p>男輕量排汗抗臭登山T恤<br><span class="price2">NT$299</span> <span style=" color:#c4c4c4; font-size:14px;font-weight:normal;text-decoration:line-through;">$349</span><span class="crossprice"></span></p>
+ 	</div>
+ </a>
+ <a href="{{store direct_url='hiking-c126283.html#model=8492281'}}" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img  class="img-lazyload loaded"src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/0/0/0053be8c-0ae7-45a1-9727-67ebed7daa93_8492281.jpg">
+ 		<p>女親膚排汗登山T恤<br><span class="price2">NT$149</span></p>
+ 	</div>
+ </a>
+ <a href="{{store direct_url='hiking-c121036.html#model=8382991'}}" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img  class="img-lazyload loaded"src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/e/a/ea41af4f-88f0-4e15-9672-34d9b7530e47_8385722.jpg">
+ 		<p>女輕量排汗抗臭登山T恤 <br><span class="price2">NT$349</span></p>
+ 	</div>
+ </a>
+			
+			
+ <a href="{{store direct_url='trekking-c109031.html#model=8332742'}}" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img  class="img-lazyload loaded"src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/1/6/16f8f32f644043f8b6d38cfacb9e4cce_8332742.jpg">
+ 		<p>男抗撕裂透氣登山褲 <br><span class="price2">NT$749</span> <span class="crossprice"></span></p>
+ 	</div>
+ </a>
+ <a href="{{store direct_url='hiking-c130366.html#model=8493701'}}" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img  class="img-lazyload loaded"src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/b/f/bf9cf14e-9c29-4243-85be-cb056a80af7d_8493701.jpg">
+ 		<p>男輕量快乾登山長褲<br><span class="price2">NT$1499</span></p>
+ 	</div>
+ </a>
+ <a href="{{store direct_url='hiking-c130360.html#model=8493683'}}" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img  class="img-lazyload loaded"src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/0/2/02d43270-ab19-4c9d-a5b2-64e124b95d33_8493684.jpg">
+ 		<p>女輕量快乾彈性登山褲<br><span class="price2">NT$1499</span> <span class="crossprice"></span></p>
+ 	</div>
+ </a>
+ <a href="{{store direct_url='running-c116641.html#model=8370294'}}" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img  class="img-lazyload loaded"src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/0/5/0572635c-6b69-452e-a125-b4f9639a6b5c_8370294.jpg">
+ 		<p>女款快乾透氣緊身褲<br><span class="price2">NT$399</span></p>
+ 	</div>
+ </a>
+ 
+ </td>
+ 	</tr>
+ </table>		   
+</section>
+	
+	<!---section-->
+	<section class="article bg4" id="s4">
+		<div class="des2">
+		 <div class="title-1-line">PART 3</div>
+		  <h3>登山防水外套</h3>
+			<p>擋風又擋雨，皆經實驗室測試，品質保證<br>是你第一次登百岳的外套首選</p>
+		</div>
+	</section>
+	<!-----product area------>
+	<section class="prodwrap">	
+ 	<table>
+ 	<tr>
+ 		<td>
+
+ <a href="{{store direct_url='hiking-c106957a.html#model=8492419'}}" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img  class="img-lazyload loaded"src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/3/7/375283f0-2802-4888-8623-e079fa10e1a3_8492419.jpg">
+ 		<p>男防風防雨登山外套<br><span class="price2">NT$1499</span> <span style=" color:#c4c4c4; font-size:14px;font-weight:normal;text-decoration:line-through;">$1749</span></p>
+ 	</div>
+ </a>
+  <a href="{{store direct_url='hiking-c106957.html#model=8302503'}}" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img  class="img-lazyload loaded"src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/1/b/1b7d6343a9424ea8aa23bdbfd40920d3_8355719.jpg">
+ 		<p>男防風防雨登山外套<br><span class="price2">NT$1749</span></p>
+ 	</div>
+ </a>
+ <a href="{{store direct_url='hiking-c120652.html#model=8382335'}}" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img  class="img-lazyload loaded"src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/b/9/b9b8e87b-96e3-462a-b2a0-329e9b6fa1c5_8492425.jpg">
+ 		<p>【極輕量】男高機能外套<br><span class="price2">NT$2999</span></p>
+ 	</div>
+ </a>
+ <a href="{{store direct_url='hiking-c126329.html#model=8492408'}}" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img  class="img-lazyload loaded"src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/d/6/d623d2ad-cf8b-4942-a9c3-529b3ab50f23_8492408.jpg">
+ 		<p>男防水透氣登山外套<br><span class="price2">NT$999</span></p>
+ 	</div>
+ </a>
+			
+ 
+<a href="{{store direct_url='hiking-c107341.html#model=8356612'}}" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img  class="img-lazyload loaded"src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/9/9/992cfb6b-98a8-436b-8890-b68202d16332_8492360.jpg">
+ 		<p>女防風雨透氣登山外套<br><span class="price2">NT$1749</span></p>
+ 	</div>
+ </a>
+  <a href="{{store direct_url='hiking-c107341.html#model=8492361'}}" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img  class="img-lazyload loaded"src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/3/d/3d2bd3c6-914f-4045-a886-1122f96c94e9_8492361.jpg">
+ 		<p>女防風雨透氣登山外套<br><span class="price2">NT$1749</span></p>
+ 	</div>
+ </a>
+ <a href="{{store direct_url='hiking-c120664.html#model=8382341'}}" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img  class="img-lazyload loaded"src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/c/2/c21ed7f8-15c1-4608-a7fc-4ff9ee7b1ab3_8480683.jpg">
+ 		<p>【極輕量】女高機能外套<br><span class="price2">NT$2999</span></p>
+ 	</div>
+ </a>
+ <a href="{{store direct_url='hiking-c126328.html#model=8492378'}}" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img  class="img-lazyload loaded"src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/4/3/433f45df-c6b1-4e4d-a90c-eacef03e8c42_8492381.jpg">
+ 		<p>女防水透氣登山外套<br><span class="price2">NT$999</span></p>
+ 	</div>
+ </a>
+ </td>
+ 	</tr>
+ </table>		   
+</section>
+	
+	<!---section-->
+	<section class="article bg5" id="s5">
+		<div class="des2">
+		 <div class="title-1-line">PART 4</div>
+		  <h3>登山配件</h3>
+			<p>小兵立大功，選對配件帶你上天堂<br>不知道怎麼挑選?<br>往下看，我們都幫你準備好了!</p>
+			<html lang="en">
+			<head>
+				<meta charset="UTF-8">
+				<title>Document</title>
+			</head>
+			<body>
+				
+			</body>
+			</html></p>
+		</div>
+	</section>
+	<!-----product area------>
+	<section class="prodwrap">	
+ 	<table>
+ 	<tr>
+ 		<td>
+ <a href="{{store direct_url='trekking-c103705.html#model=8355664'}}" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img  class="img-lazyload loaded"src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/d/4/d46a9391-0272-4e00-86f5-46845b9337ea_8383411.jpg">
+ 		<p>排汗登山健行頭巾 脖圍<br><span class="price2">NT$79</span></p>
+ 	</div>
+ </a>
+  <a href="{{store direct_url='trekking-c58073.html#model=8270565'}}" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img  class="img-lazyload loaded"src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/f/4/f44d9830f4d341ffb7249de63c15d9fe_8270565.jpg">
+ 		<p>輕量三節式登山健行杖<br><span class="price2">NT$699</span></p>
+ 	</div>
+ </a>
+ <a href="{{store direct_url='trekking-c115797.html#model=8384991'}}" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img  class="img-lazyload loaded"src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/4/9/495d9f7c-26d1-4d54-9cbb-b1988531679c_8384991.jpg">
+ 		<p>【80流明】LED探照頭燈<br><span class="price2">NT$249</span></p>
+ 	</div>
+ </a>
+ <a href="{{store direct_url='trekking-c117828.html'}}" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img  class="img-lazyload loaded"src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/4/d/4d00f3ae-cd54-485d-9ae8-c629c0f68696_8384994.jpg">
+ 		<p>【130流明】LED探照頭燈 <br><span class="price2">NT$499</span></p>
+ 	</div>
+ </a>
+
+			
+ 
+ <a href="{{store direct_url='hiking-c113725.html#model=8358984'}}" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img  class="img-lazyload loaded"src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/4/c/4c62f4e0-181b-487a-b935-dd4ee54337ee_8358984.jpg">
+ 		<p>成人短筒登山襪<br><span class="price2">NT$199</span></p>
+ 	</div>
+ </a>
+ <a href="{{store direct_url='hiking-c108053.html#model=8313153'}}" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img  class="img-lazyload loaded"src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/1/b/1b471473-6faf-4a75-a4e6-71bd9e25815b_8313153.jpg">
+ 		<p>成人羊毛保暖登山襪<br><span class="price2">NT$199</span></p>
+ 	</div>
+ </a>
+ <a href="{{store direct_url='decathlon/search/result/?q=登山健行水袋%28水壺%29&dir=desc'}}" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img  class="img-lazyload loaded"src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/4/d/4d476ffb-d028-4496-b2c9-3d3ee755455c_8493246.jpg">
+ 		<p>1L/2L登山健行水袋<br><span class="price2">NT$249起</span></p>
+ 	</div>
+ </a>
+ <a href="{{store direct_url='decathlon/search/result/?q=Tritan快開&dir=desc'}}" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img  class="img-lazyload loaded"src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/b/f/bf7e1b4a-082b-4d3f-a117-674699aaf0ff_8359171.jpg">
+ 		<p>Tritan快開水壺<br><span class="price2">NT$149起</span></p>
+ 	</div>
+ </a>
+
+ 			
+ </td>
+ 	</tr>
+ </table>		   
+</section>
+	
+	
+	
+	
+	<!---more-->
+	<section class="article bg7">
+		<div class="des3">
+		 <div class="title-1-line">MORE</div>
+		  <h3>更多登山商品</h3>
+			<p>初階、中階、高階<br>登山產品一應俱全<br>完成百岳不是夢，我們都幫您準備好了
+			</p>
+			 <!------BUY BTN------>
+	<a href="https://www.decathlon.tw/zh/hiking-and-camping" target="_blank" class="btns blu">
+		<div class="btn-txt">更多登山用品</div>
+		<div class="btn-arrow">
+			<svg class="arrow icon-keyboard_arrow_right"><use xlink:href="#icon-keyboard_arrow_right"></use>
+				<defs>
+				<symbol id="icon-keyboard_arrow_right" viewBox="0 0 24 24">
+				<title>keyboard_arrow_right</title>
+				<path d="M8.578 16.359l4.594-4.594-4.594-4.594 1.406-1.406 6 6-6 6z"></path>
+				</symbol>
+				</defs>
+			</svg>
+		</div>  
+	</a>
+		</div>
+	</section>
+<!---footer--->
+<section class="mobile">
+     <style>
+/****store-link****/
+.store-link{clear:left; font-size:16px; line-height:30px; width:100%; margin:0 0px 0 0px; height:auto; background:#D4D4D4; text-align:center; padding:0px 0 20px 0;}
+.store-link a{ text-decoration:none; transition:.2s;}
+.store-link a:hover{color:#F60;}
+/***share****/
+.share{ background:#3c3c3c; height:70px; width:100%; margin:0 0 0 0px;}
+.share table{width:calc(100% - 1px);}
+.share td{ vertical-align:middle;}
+.share td p{ display:inline-block; line-height:20px; font-size:14px; color:#fff; font-family:微軟正黑體; letter-spacing:1px;width: auto !important;margin: 15px 0 0 0 !important;}
+.share td img{width:50px !important; margin:10px; display:inline-block; float:left;}
+</style>
+<div class="store-link">
+   <table style="width:100%;">
+    <tbody><tr>
+     <td style="padding:20px; text-align:center; vertical-align:middle;"><img src="https://media.decathlon.tw/media/wysiwyg/find_store/local01.jpg" width="280px" style="margin: auto;"></td>
+     </tr>
+     <tr>
+     <td style="padding: 0 20px 0 20px; vertical-align:middle; text-align:center; line-height:30px;">
+門市資訊:<br> <a href="https://www.decathlon.tw/zh/decathlon/store/detail/taiwan-neihu-store">台北內湖店</a> | <a href="https://www.decathlon.tw/zh/decathlon/store/detail/taiwan-zhonghe-store">新北中和店</a> |  <a href="https://www.decathlon.tw/zh/decathlon/store/detail/taibei-bade-store">桃園八德店</a> <br> <a href="https://www.decathlon.tw/zh/decathlon/store/detail/taiwan-zhongli-store">桃園中壢</a> |  <a href="https://www.decathlon.tw/zh/decathlon/store/detail/taiwan-nantun-store">台中南屯</a> | <a href="https://www.decathlon.tw/zh/decathlon/store/detail/taiwan-beitun-store">台中北屯</a> |  <a href="https://www.decathlon.tw/zh/decathlon/store/detail/taiwan-chiayi-store">嘉義店</a><br><a href="https://www.decathlon.tw/zh/decathlon/store/detail/taiwan-ximen-store">台南西門店</a> | <a href="https://www.decathlon.tw/zh/decathlon/store/detail/taiwan-rende-store">台南仁德店</a> | <a href="https://www.decathlon.tw/zh/decathlon/store/detail/taiwan-fengshan-store">高雄鳳山店</a> |<br><a href="https://www.decathlon.tw/zh/decathlon/store/detail/taiwan-pingtung-store">屏東店</a>  | <a href="https://www.decathlon.tw/zh/decathlon/store/detail/taipei-guilin-storee">台北桂林店</a>
+     </td>
+    </tr>
+</tbody></table>
+</div>
+
+<!--Share button-->
+<div style="margin:20px auto 20px auto;z-index: 999; width:200px;">
+ <table style="width:100%; margin:auto;">
+  <tr>
+   <td><a href="https://line.naver.jp/R/msg/text/?剛剛在迪卡儂看到這個不錯，推薦給你! https://www.decathlon.tw/zh/hiking18/"><img src="https://media.decathlon.tw/media/wysiwyg/line-share.png" width="84"></a></td>
+   <td><div class="fb-like" data-href="https://www.decathlon.tw/zh/hiking18/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div></td>
+  </tr>
+ </table>
+</div>
+<!--Share button end-->
+
+<script type="text/javascript">// <![CDATA[
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=119686551468562&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+// ]]></script>
+
+<!--Share button END-->
+
+<div class="share">
+ <table>
+ <tbody><tr>
+ <td style="border-right:1px solid #fff;"><a href="https://www.facebook.com/decathlon.tw" target="_blank"><img src="https://media.decathlon.tw/media/wysiwyg/TW_Homepage/facebook_share.png"><p>Facebook<br>粉絲團</p></a></td>
+ <td><a href="https://www.youtube.com/channel/UC3AVKMpLn99DByojHYJooXQ" target="_blank"><img src="https://media.decathlon.tw/media/wysiwyg/TW_Homepage/youtube_share.png"><p>YouTube<br>官方頻道</p></a></td>
+ </tr></tbody></table>
+</div>
+    </section>
+	
+<!-- JS -->
+<script src="https://www.decathlon.fr/ecfr/static/2017-04-12-lp-hiking-kids/js/min.hiking.core.js" async></script> 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script>
+	/* slidedowm */
+$(function(){
+	
+	$("#goa").click(function(){
+
+		$("html,body").animate({scrollTop:600},900);
+
+		//$("html,body").animate({scrollTop:0},900,"easeOutBounce");
+
+		return false;
+
+	});
+
+});
+	</script>
+</body>
+</html>

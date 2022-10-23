@@ -1,0 +1,96 @@
+div.cssbox {
+  display: inline-block;
+}
+
+span.cssbox_full {
+  z-index: 999;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.8);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  /*transition: opacity 0.2s linear;*/
+}
+
+span.cssbox_full img {
+  position: fixed;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  max-height: 90%;
+  max-width: 90%;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 20px black;
+}
+
+a.cssbox_close,
+a.cssbox_prev,
+a.cssbox_next {
+  z-index: 999;
+  position: fixed;
+  text-decoration: none;
+  visibility: hidden;
+  color: white;
+  font-size: 36px;
+}
+
+a.cssbox_close {
+  top: 1%;
+  right: 1%
+}
+
+a.cssbox_close::after {
+  content: '\00d7';
+}
+
+a.cssbox_prev,
+a.cssbox_next {
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+a.cssbox_prev {
+  left: 5%;
+}
+
+a.cssbox_next {
+  right: 5%;
+}
+
+a:target ~ a.cssbox_close,
+a:target ~ a.cssbox_prev,
+a:target ~ a.cssbox_next {
+  visibility: visible;
+}
+
+a:target > img.cssbox_thumb + span.cssbox_full {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: initial;
+}
+
+span.cssbox_full {
+  cursor: initial;
+}
+/* This is the end of CSSBox */
+
+.detailbanner{ width:200px; height:200px;display: inline-block;}  
+.over:hover .black{ width:100%; height:240px; background:rgba(0,0,0,.6); transition:0.5s; }
+.black{ width:100%; height:240px; background:rgba(0,0,0,0); transition:0.5s;}
+.over:hover .i1{ display:block; transition:0.5s; padding:150px 0 0 120px; opacity:1.0; filter:alpha(opacity=100);font-size: 25px;color: #feea29;font-family: "Roboto Condensed", 微軟正黑體, sans-serif; /* 针对 IE8 以及更早的版本 */}
+.black .i1{ margin:0;  transition:0.5s; opacity:0.0; filter:alpha(opacity=00);font-size: 25px;color: #feea29;font-family: "Roboto Condensed", 微軟正黑體, sans-serif; /* 针对 IE8 以及更早的版本 */ padding:170px 0 0 120px;}
+.over:hover h4{ display:block; padding:170px 0 0 0px; color:#feea29 !important;transition:0.5s;}
+h4{ margin:0; font-size:19px !important; text-align:center;  font-weight:600; padding:180px 0 0 0px; color:#ffffff; font-family:"微軟正黑體";transition:0.5s;}
+
+@media screen and (max-width:576px) {
+.black{display: none !important;}
+.i1{display: none !important;}
+h4{display: none !important;}
+
+}

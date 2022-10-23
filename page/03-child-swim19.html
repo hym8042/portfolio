@@ -1,0 +1,668 @@
+ <!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+<link media="screen" rel="stylesheet" type="text/css" href="https://media.decathlon.tw/media/rockrider_asset/styles-desktop.min.css" />
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i, 800,800i" rel="stylesheet">	
+<!-- Facebook-->
+	<meta property="og:title" content="兒童游泳-夏日玩水趣" />
+	<meta property="og:site_name" content="兒童游泳-夏日玩水趣" />
+	<meta property="og:description" content="兒童游泳-夏日玩水趣" />
+	<meta property="og:url" content="https://www.decathlon.tw/zh/child-swim19" />
+	<meta property="og:image" content="https://media.decathlon.tw/media/wysiwyg/TW_landingpage/swim/190617_fb.jpg" />
+	<meta property="og:type" content="website" />
+	<link href="https://media.decathlon.tw/media/wysiwyg/TW_landingpage/swim/190617_fb.jpg" rel="image_src" type="image/jpeg">	
+
+
+<title>兒童游泳特輯</title>
+<style>
+body {　overflow-y: scroll;overflow-x: hidden !important;box-sizing: border-box;margin: 0; padding: 0;}
+a{ text-decoration: none!important; }
+.hidden{ display:none;}
+#referafriend{ display:none;}
+.mobi-toolbar{ display:none;}
+.header{ display:none;}
+.mobile{ display:none !important;}
+.pad{display: none !important;}
+.tlogo{ position:absolute; top:10px; left:10px; z-index:999;}
+/*top banner*/
+.topban{width: 100%; height: 110vh; background-image: url(https://media.decathlon.tw/media/wysiwyg/TW_landingpage/swim/190617bg.jpg); background-position: center; background-size: 100% auto; text-align: center;}
+	/******MOUSE******/
+.mou{ position:absolute; margin:0px 0 0 50% !important; bottom: 10px;}
+@keyframes mouse_boucle {
+    0%   { opacity:0; }
+	30%  { opacity:1;  }
+	40%  { transform: translateY(10px);opacity:1; transform: rotate(0deg); }
+	80%  { transform: translateY(10px);opacity:1; transform: rotate(0deg); }
+	100%  { transform: translateY(10px);opacity:0; }
+}
+@keyframes mouse_fle {
+     0%   { opacity:0; }
+	30%  { opacity:1;  }
+	40%  { transform: translateY(15px);opacity:1;  }
+	80%  { transform: translateY(15px);opacity:1; }
+	100%  { transform: translateY(15px);opacity:0; }
+}
+
+.cursor_animate .mouse {
+    width: 100%;
+    height: 100px;
+    background-image: url(http://media.decathlon.tw/media/wysiwyg/TW_landingpage/swim/child_swim18_floating-belt.png);
+	background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.mouse {
+    animation-name: mouse_boucle;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
+.cursor_animate {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-15px);
+    cursor: pointer;
+}
+.cursor_animate .fle {
+    width: 100%;
+    height:50px;
+    background-image: url(http://media.decathlon.tw/media/wysiwyg/TW_landingpage/swim/child_swim18_arrow.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+.fle {
+    animation-name: mouse_fle;
+    animation-duration: 2s;
+    animation-delay: 2.2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
+	/*family set*/
+	.familyset{width: 100%; height: auto; background: url(https://media.decathlon.tw/media/wysiwyg/TW_landingpage/teamsport/wcmap.png) #c1eaec no-repeat; background-position: center; background-size: 120% auto; text-align: center; padding: 80px 0;}
+	.func_img{margin: 20px 0;}
+	.title-1{font-size:48px;font-family: "Roboto Condensed", 微軟正黑體, sans-serif;font-weight:800;color:#fff;text-transform:uppercase;font-style:italic;line-height:28px; margin: 0;}
+	.black{color: #333;}
+	.title-1-sub{font-size:18px;font-weight:200;letter-spacing:0.2em;display:inline-block;font-family: "Roboto Condensed", 微軟正黑體, sans-serif;font-style:normal; text-align:center; margin-top: 10px;}
+	.title-1-line{ margin: 15px 43% 0 43%; content:"";width:140px;height:14px;background-color:#a3e2ff;*zoom:1;filter:progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FF3FDDFE', endColorstr='#FF0082c3');background-image:linear-gradient(to right, #a3e2ff 0%,#0082c3 100%);background-image:linear-gradient(to right, #a3e2ff 0%,#0082c3 100%);background-image:linear-gradient(to right, #a3e2ff 0%,#0082c3 100%);background-image:linear-gradient(to right, #a3e2ff 0%,#0082c3 100%);background-image:linear-gradient(to right, #a3e2ff 0%,#0082c3 100%);transform:skew(-15deg);transform:skew(-15deg);transform:skew(-15deg);transform:skew(-15deg);margin-right:8px}
+
+	
+/*dress set*/
+	.dset{width: 100%; height: 800px; background-size: auto 100%; text-align: center; padding: 70px 17%; box-sizing: border-box; }
+	.adu{ background: url(http://media.decathlon.tw/media/wysiwyg/TW_landingpage/swim/child_swim18_bg1.jpg) no-repeat #33332a;background-position: center;}
+	.kid{ background: url(http://media.decathlon.tw/media/wysiwyg/TW_landingpage/swim/child_swim18_bg2.jpg) no-repeat #33332a;background-position: center;}
+	.swim{ background: url(http://media.decathlon.tw/media/wysiwyg/TW_landingpage/swim/child_swim18_bg3.jpg) no-repeat #33332a;background-position: center;}
+	.setp_wrap{width: 500px; margin: 0px 0; display: flex; flex-wrap: wrap;}
+	.setp_wrap2{width: 500px; margin: 20px 0 20px 45%; display: flex; flex-wrap: wrap;}
+	.setp{width: 200px; height: 260px; flex: 200px 0 0;}
+	.setp img{margin:0 auto;}
+	.setp p{font-family: "Roboto Condensed", 微軟正黑體, sans-serif; font-size: 16px !important; color: #2e2e2e; line-height: 1.2; margin: 0;}
+	.sub-left{ color: #0082c3; text-align: left;margin-left: 350px;}	
+/*worldcup ball*/
+	.wcball{width: 100%; text-align: center; padding: 50px 0;background-color: #eeeeee;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");}
+	
+/*products*/
+.prodwrap{ width:100%; padding:20px 0 20px 0; text-align: center;}
+.prodwrap table{ padding:0; margin:0 auto; width:962px; border-spacing:0; border:0;}
+.price2{font-weight:bold !important; color: #0082c3; font-size: 30px;line-height: 1.6;}
+.cross-price{ text-decoration: line-through; color: #0082c3;}
+.prod{width:240px; margin:0px;float:left; background:#FFF; height:250px; text-align: center;}
+.prod3{width:240px; margin:0px;float:left; background:#FFF; height:380px; text-align: center;}
+.prod4{width:240px; margin:0px;float:left; background:#FFF; height:380px; text-align: center;}
+.prod img{width:80%; margin:5% !important;}
+.prod3 img{width:90%; margin:5% !important;}
+.prod4 img{width:90%; margin:5% !important;}
+.prod p{ margin:10px 0 0 0 !important; line-height:1.6; font-size:16px; text-align:center; color:#333;font-family: "Roboto Condensed", 微軟正黑體, sans-serif;}
+.prod3 p{ margin:10px 0 0 0 !important; line-height:22px; font-size:16px; text-align:center; color:#333;font-family: "Roboto Condensed", 微軟正黑體, sans-serif;}
+.prod4 p{ margin:10px 0 0 0 !important; line-height:22px; font-size:16px; text-align:center; color:#333;font-family: "Roboto Condensed", 微軟正黑體, sans-serif;}
+.imag2{display:none !important; padding-left: 12px;}
+.prod:hover .imag1{display:none !important;}
+.prod:hover .imag2{display:block !important;}		
+/*footer*/
+	.wcfoot{width: 100%; height: 400px; background: url(http://media.decathlon.tw/media/wysiwyg/TW_landingpage/swim/child_swim18_more.jpg) no-repeat; background-size: auto 100%; background-position: center; text-align: center; color: #fff; font-size: 28px; line-height: 400px;}
+	.wcfoot a{color: #fff;font-family: "Roboto Condensed", 微軟正黑體, sans-serif;}
+	
+/*btn*/
+	/*GO-ON*/
+.btn{
+    display: block;
+    position: relative;
+	width: 150px;
+    padding: 0px 50px 0 20px;
+    height: 40px;
+    font: 15px/15px Microsoft JhengHei;
+    text-transform: uppercase;
+    text-decoration: none;
+    overflow: hidden;
+	margin:20px auto;
+}
+.btn:before {
+    content: '';
+    position: absolute;
+    left: calc(100% - 30px);
+    top: 0px;
+    width: calc(100% + 20px);
+    height: 100%;
+    background-color: #fff;
+    transform: skewX(-15deg);
+    opacity: 0.3;
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.btn:hover:before {
+    transform: translate(calc(-100% + 40px), 0) skewX(-15deg);
+}
+/*BTN1 CONTENT*/
+.btn-arrow {
+    position: absolute;
+    right: 4px;
+    top: 10px;
+}
+.arrow {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+.btn-txt {
+    position: relative;
+    margin-top: 13px;
+    white-space: nowrap;
+}
+/*BG COLOR*/
+.yel{color: #232323;
+    background: linear-gradient(to bottom, #fff800 0%,#f7c500 100%);}
+.blu{background: linear-gradient(to bottom, #4eb0ed 0%,#0274ba 100%);color: #FFF;}
+.white{background: linear-gradient(to bottom, #F9FAF9 0%,#E2E2E2 100%);color: #000; box-shadow: -1px -1px 0px #EBEBEA;}
+@media screen and (max-width: 1366px){
+/*top banner*/
+.topban{width: 100%; height: 120vh; background-image: url(https://media.decathlon.tw/media/wysiwyg/TW_landingpage/swim/190617bg.jpg); background-position: center; background-size: 100% auto; text-align: center;}
+/*MOUSE*/
+.mou{ position:absolute; margin:0px 0 0 50% !important; bottom: -50px;}	
+}	
+@media screen and (max-width: 1024px){
+.topban{width: 100%; height: 80vh; background-image: url(https://media.decathlon.tw/media/wysiwyg/TW_landingpage/swim/190617bg.jpg); background-position: top center; background-size:100% auto  ; text-align: center; background-repeat: no-repeat;}
+.mou{ position:absolute; margin:0px 0 0 50% !important; bottom: 225px;}
+.title-1{font-size:40px;font-family: "Roboto Condensed", 微軟正黑體, sans-serif;font-weight:800;color:#fff;text-transform:uppercase;font-style:italic;line-height:40px; margin: 0;}	
+.title-1-line{ margin: 15px 43% 0 40%; content:"";width:140px;height:14px;background-color:#a3e2ff;*zoom:1;filter:progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FF3FDDFE', endColorstr='#FF0082c3');background-image:linear-gradient(to right, #a3e2ff 0%,#0082c3 100%);background-image:linear-gradient(to right, #a3e2ff 0%,#0082c3 100%);background-image:linear-gradient(to right, #a3e2ff 0%,#0082c3 100%);background-image:linear-gradient(to right, #a3e2ff 0%,#0082c3 100%);background-image:linear-gradient(to right, #a3e2ff 0%,#0082c3 100%);transform:skew(-15deg);transform:skew(-15deg);transform:skew(-15deg);transform:skew(-15deg);margin-right:8px}
+.title-1-sub{font-size:18px;font-weight:100;letter-spacing:0.2em;display:inline-block;font-family: "Roboto Condensed", 微軟正黑體, sans-serif;font-style:normal; text-align:center; margin-top: 10px;}
+.sub-left{ color: #0082c3; text-align: left;margin-left: 270px;line-height: 1.6;}
+.black{color: #333;}
+.setp{width: 180px; height: 230px; flex: 200px 0 0;}
+.setp img{width: 90%;}
+.setp_wrap{width: 380px; margin: 0px 0; display: flex; flex-wrap: wrap;}
+.setp_wrap2{width: 380px; margin: 0px 0 0px 50%; display: flex; flex-wrap: wrap;}
+.prod img{width:70%; margin:5% !important;}
+.prod3 img{width:80%; margin:5% !important;}
+	}
+@media screen and (max-width:768px){
+.topban{width: 100%; height: 50vh !important; background-image: url(https://media.decathlon.tw/media/wysiwyg/TW_landingpage/swim/190617bg.jpg); background-position: top center !important; background-size:100%; text-align: center; background-repeat: no-repeat;}	
+.mou{ display: none;}
+.title-1{font-size:35px;font-family: "Roboto Condensed", 微軟正黑體, sans-serif;font-weight:800;color:#fff;text-transform:uppercase;font-style:italic;line-height:40px; margin: 0;}
+.title-1-line{ margin: 15px 43% 0 37%; content:"";width:160px;height:14px;background-color:#a3e2ff;*zoom:1;filter:progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FF3FDDFE', endColorstr='#FF0082c3');background-image:linear-gradient(to right, #a3e2ff 0%,#0082c3 100%);background-image:linear-gradient(to right, #a3e2ff 0%,#0082c3 100%);background-image:linear-gradient(to right, #a3e2ff 0%,#0082c3 100%);background-image:linear-gradient(to right, #a3e2ff 0%,#0082c3 100%);background-image:linear-gradient(to right, #a3e2ff 0%,#0082c3 100%);transform:skew(-15deg);transform:skew(-15deg);transform:skew(-15deg);transform:skew(-15deg);margin-right:8px;}	
+.title-1-sub{font-size:17px;font-weight:100;letter-spacing:1.2;display:inline-block;font-family: "Roboto Condensed", 微軟正黑體, sans-serif;font-style:normal; text-align:center; margin-top: 10px;width: 370px;}
+.setp{width: 170px; height: 200px; flex: 200px 0 0;}
+.setp img{width: 75%;}
+.setp_wrap{width: 380px; margin: 0px 0; display: flex; flex-wrap: wrap;}
+.setp_wrap2{width: 380px; margin: 0px 0 0px 30%; display: flex; flex-wrap: wrap;}
+.sub-left{ color: #0082c3; text-align: left;margin-left: 180px;line-height: 1.4;}
+.black{color: #333;}
+.prodwrap table{ padding:0; margin:0 auto; width:768px; border-spacing:0; border:0;}
+.prod{width:190px; margin:0px;float:left; background:#FFF; height:200px; text-align: center;}
+.prod img{width:80%; margin:5% !important;}
+.prod p{ margin:10px 0 0 0 !important; line-height:1.6; font-size:16px; text-align:center; color:#333;font-family: "Roboto Condensed", 微軟正黑體, sans-serif;}
+.imag1{width: 90% !important;}
+.imag2{width: 90% !important;}
+.imag2{display:none !important; padding-left: 0px;}
+.prod:hover .imag1{display:none !important;}
+.prod:hover .imag2{display:block !important;}
+.prod3{width:190px; margin:0px;float:left; background:#FFF; height:350px; text-align: center;}
+.prod3 img{width:80%; margin:1% !important;}
+.prod3 p{ margin:10px 0 0 0 !important; line-height:22px; font-size:15px; text-align:center; color:#333;font-family: "Roboto Condensed", 微軟正黑體, sans-serif;}
+.prod4{width:190px; margin:0px;float:left; background:#FFF; height:350px; text-align: center;}
+.prod4 img{width:80%; margin:10px !important;}
+.prod4 p{ margin:10px 0 0 0 !important; line-height:22px; font-size:15px; text-align:center; color:#333;font-family: "Roboto Condensed", 微軟正黑體, sans-serif;}
+.wcball img{width: 90%;}
+
+}	
+@media screen and (max-width: 576px){
+.backToTop{ display:none !important;}
+/*top banner*/
+	.topban{width: 100%; height: 70vh !important; background-image: url(https://media.decathlon.tw/media/wysiwyg/TW_landingpage/swim/190617m-top.jpg); background-position:center 0px; background-size:auto  100%; text-align: center; background-repeat: no-repeat;}
+	.mou{ display: none;}
+	.menu{ display: none}
+	h2{ padding-top: 30px;}
+/*family set*/
+	.familyset{background-size: 100% auto;}
+	.func_img{margin: 20px 0; width: 100%;}
+	.setcolor img{width:100%;}
+/*dress set*/
+	.dset{width: 100%; height:auto; background-size: 100% auto; text-align: center; padding: 40px 0%; box-sizing: border-box; }
+	.adu{ background: url(http://media.decathlon.tw/media/wysiwyg/TW_landingpage/swim/child_swim18_bg1.jpg) no-repeat #eeeeee;background-position:-1100px 0px;}
+	.kid{ background: url(http://media.decathlon.tw/media/wysiwyg/TW_landingpage/swim/child_swim18_bg2.jpg) no-repeat #eeeeee;background-position:-360px 0px;}
+	.swim{ background: url(http://media.decathlon.tw/media/wysiwyg/TW_landingpage/swim/child_swim18_bg3.jpg) no-repeat #eeeeee;background-position:-1200px -100px;}
+	.sub-left{ width: 280px; padding: 10px; color: #2e2e2e; text-align: center;margin-left: 10px; background-color: rgba(255,255,255,0.80)}	
+	.mobilesubtxt{ width: 280px; padding: 10px; color: #2e2e2e; text-align: center;margin-left: 10px; background-color: rgba(255,255,255,0.80)}	
+	.setp_wrap{width: 100%; margin: 300px 0 0 0; display: flex; flex-wrap: wrap; background:#eeeeee; padding-left: 30px; padding-top: 50px;}
+	.setp_wrap2{width: 100%; margin: 300px 0 0 0; display: flex; flex-wrap: wrap; background:#eeeeee; padding-left: 30px; padding-top: 50px;}
+	.setp{width: 160px; height: 250px; flex: 10% 0 0;}
+	.setp img{margin:0 auto; width: 100%;}
+	.setp p{font-size: 18px; line-height:1; color: #2e2e2e; margin-top: 0px;}
+/*worldcup ball*/
+	.wcball{width: 100%; text-align: center; background: #e5e5e5; padding: 50px 0;}
+	.wcball img{width: 100%;}
+	.black{font-size: 42px;}
+
+/*products*/
+.prodwrap{ width:100%; padding:40px 0 20px 0;}
+.prodwrap2{ width:90%; padding:0 0 20px 0; margin: auto; position: relative; background: #fff;}
+.prodwrap table{ padding:0; margin:0; width:420px; border-spacing:0; border:0;}
+.prod{width:160px; margin-top:5px!important; margin-left:1%!important;float:left; background:#FFF; height:auto;}
+.prod3{width:160px; margin-top:5px!important; margin-left:1%!important;float:left; background:#FFF; height:auto;}
+.prod4{width:160px; margin-top:5px!important; margin-left:1%!important;float:left; background:#FFF; height:auto;}
+.prod img{width:90%; margin:5%;}
+.prod3 img{width:90%; margin:5%;}
+.prod4 img{width:90%; margin:5%;}
+.prod p{ margin:10px 0 0 0 !important; line-height:1.6; font-size:15px; text-align:center; color:#333;font-family: "Roboto Condensed", 微軟正黑體, sans-serif;}
+.prod3 p{ margin:10px 0 0 0 !important; line-height:1.6; font-size:15px; text-align:center; color:#333;font-family: "Roboto Condensed", 微軟正黑體, sans-serif;}
+.prod4 p{ margin:10px 0 0 0 !important; line-height:1.6; font-size:15px; text-align:center; color:#333;font-family: "Roboto Condensed", 微軟正黑體, sans-serif;}		
+.imag2{display:none !important;}
+.prod:hover .imag1{display:none !important;}
+.prod:hover .imag2{display:block !important;}
+.mm{ display: none}
+	}
+
+	/*Logo*/
+</style>
+</head>
+
+<body>
+	<a href="https://www.decathlon.tw"><img src="https://static.decathlon.tw/skin/frontend/enterprise/decathlon_tw/img/logo.png" class="tlogo"></a>
+	<div style=" z-index:999; position: fixed; right: 30px;" class="mm" >
+		 <p style=" width: 140px; height: 20px; background-color: rgba(0,0,0,0.5); padding: 10px; color: white">
+			   <a href="https://www.decathlon.tw/zh/decathlon/store/search/" style=" color: white; font-family: '微軟正黑體'; font-size: 18px;">全台門市</a>  |  <a href="https://www.decathlon.tw" style=" color: white; font-family: '微軟正黑體'; font-size: 18px;">回首頁</a></p>
+		<!--Share button-->
+		<div class="fb-like" data-href="https://www.decathlon.tw/zh/child-swim19" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true" style="margin-top: 0px;  ">&nbsp;</div>
+		<!--Share button end-->
+	</div><!--logo end-->	
+<section class="topban">
+		<section class="mou" id="goa">
+			<div class="cursor_animate">
+     		 <div class="mouse" style="font-family: '微軟正黑體'"></div>
+    		 <div class="fle"></div>
+  			</div>
+		</section>
+	</section>
+	
+	<!-----menu area------>
+	<section class="prodwrap menu">
+
+ 	<table>
+ 	<tr>
+ 		<td>
+ 
+ 
+ <a href="#s1" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img class="imag1" src="http://media.decathlon.tw/media/wysiwyg/TW_landingpage/swim/child_swim18_m1.jpg"><img class="imag2" src="http://media.decathlon.tw/media/wysiwyg/TW_landingpage/swim/child_swim18_m1-1.jpg">
+ 		
+ 	</div>
+ </a>
+ 
+ <a href="#s2" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img class="imag1" src="http://media.decathlon.tw/media/wysiwyg/TW_landingpage/swim/child_swim18_m2.jpg"><img class="imag2" src="http://media.decathlon.tw/media/wysiwyg/TW_landingpage/swim/child_swim18_m2-1.jpg">
+ 	</div>
+ </a>
+ <a href="#s3" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img class="imag1" src="http://media.decathlon.tw/media/wysiwyg/TW_landingpage/swim/child_swim18_m3.jpg"><img class="imag2" src="http://media.decathlon.tw/media/wysiwyg/TW_landingpage/swim/child_swim18_m3-1.jpg">
+ 	</div>
+ </a>
+ <a href="#s4" class="panoply-slide-img">
+ 	<div class="prod">
+ 		<img class="imag1" src="http://media.decathlon.tw/media/wysiwyg/TW_landingpage/swim/child_swim18_m4.jpg"><img class="imag2" src="http://media.decathlon.tw/media/wysiwyg/TW_landingpage/swim/child_swim18_m4-1.jpg">
+ 	</div>
+ </a>
+ 
+ </td>
+ 	</tr>
+ </table>
+				   
+</section>
+	<!-----#1------>
+	<section class="dset adu" id="s1">
+		<div style="width: 10px; height: 15px;"></div>
+	 <h2 class="title-1 panoply-title">
+				<div class="panoply-title-big">初次入水</div>
+				<div class="title-1-line panoply-title-line"></div>
+				<div class="title-1-sub panoply-title-sub mobilesubtxt">
+					剛剛接觸水難免有些害怕!<br>別擔心!這些產品提供良好的浮力，雙氣室泳圈，安全更加分!
+				</div>
+	 </h2>
+	<div style="width: 10px; height: 10px;"></div>
+	 <div class="setp_wrap">
+		<a href="https://www.decathlon.tw/zh/swimming-c81772.html#model=8545644" target="_blank">
+		<div class="setp">
+		 <img src="../img/cs-01.png" alt="">
+			<p>【3-6歲適用】<br>泳圈<br><span style="font-weight:bold; font-size: 28px;line-height: 1.2;">NT$149</span></p>
+		</div></a>
+		 <a href="https://www.decathlon.tw/zh/swimming-c310505.html" target="_blank"><div class="setp">
+		 <img src="../img/cs-02.png" alt="">
+		 <p>【28 x 58 cm】<br>浮力袋<br><span style="font-weight:bold;  font-size: 28px;line-height: 1.2;">NT$349</span></p>
+		</div></a>
+		 <a href="https://www.decathlon.tw/zh/swimming-c123268.html" target="_blank"><div class="setp">
+		 <img src="../img/cs-03.png" alt="">
+		 <p>【8歲以上】<br>泳圈<br><span style="font-weight:bold; font-size: 28px;line-height: 1.2;">NT$199</span></p>
+		</div></a>
+		 <a href="https://www.decathlon.tw/zh/swimming-c123269.html" target="_blank"><div class="setp">
+		 <img src="https://media.decathlon.tw/media/wysiwyg/TW_landingpage/swim/190617pro04.png" alt="">
+		<p>【8歲以上】<br>附把手泳圈<br><span style="font-weight:bold;font-size: 28px;line-height: 1.2;">NT$249</span></p>
+		</div></a>	
+	 </div>
+	</section>
+	<!-----product area------>
+	<section class="prodwrap">
+
+ 	<table>
+ 	<tr>
+ 		<td>
+ 
+ 
+ <a href="https://www.decathlon.tw/zh/swimming-c89236.html" target="_blank" class="panoply-slide-img">
+ 	<div class="prod3">
+ 		<img  class="img-lazyload loaded"src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/7/b/7b302a13972b455db43c759c6b0929a4_8308017.jpg">
+ 		<p>【11-15公斤適用】<br>基本款坐式泳圈<br><span class="price2">NT$249</span></p>
+ 	</div>
+ </a>
+  <a href="https://www.decathlon.tw/zh/swimming-c68926.html" target="_blank" class="panoply-slide-img">
+ 	<div class="prod3">
+ 		<img  class="img-lazyload loaded"src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/a/c/ac49aa572682495ab71ef8e3c920729c_8215998.jpg">
+ 		<p>【11-15公斤適用】<br>附把手坐式泳圈<br><span class="price2">NT$349</span></p>
+ 	</div>
+ </a>
+ <a href="https://www.decathlon.tw/zh/swimming-c301023.html" target="_blank" class="panoply-slide-img">
+ 	<div class="prod3">
+ 		<img class="img-lazyload loaded" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/6/9/69d68bef-1d16-4599-a6c9-64cb24a50fd4_8543225.jpg">
+ 		<p>【兒童適用】<br>可調式透明坐圈<br><span class="price2">NT$699</span></p> 	</div>
+ </a>
+<a href="https://www.decathlon.tw/zh/swimming-c85784.html" target="_blank" class="panoply-slide-img">
+ 	<div class="prod3">
+ 		<img class="img-lazyload loaded" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/d/c/dc855c9ec6d945a4b5e00d585be68085_8336101.jpg">
+ 		<p>【中型】<br>充氣戲水池泳池<br><span class="price2">NT$649</span></p>
+ 	</div>
+ </a>
+ </td>
+ 	</tr>
+ </table>
+				   
+</section>
+	
+	<!-----#2------>
+	<section class="dset kid" id="s2">
+	 <h2 class="title-1 panoply-title">
+				<div class="panoply-title-big" style=" color: #0082c3">水中移動</div>
+				<div class="title-1-line panoply-title-line"></div>
+				<div class="title-1-sub panoply-title-sub sub-left">
+					這個階段確保孩子在水中的平衡，並學習前後移動! <br>盡情滑水、踢腿，安全感讓寶貝在水中更有自信!
+				</div>
+	 </h2>
+	 <div class="setp_wrap2">
+	 	<a href="https://www.decathlon.tw/zh/swimming-c122402.html"  target="_blank"><div class="setp">
+		 <img src="../img/cs-04.png" alt="">
+			 <p style=" color: #2e2e2e">兒童游泳啟蒙臂圈 <br><span style="font-weight:bold; color: #0082c3; font-size: 28px;line-height: 1.2;">NT$79</span></p>
+		</div></a>
+		 <a href="https://www.decathlon.tw/zh/swimming-c49706.html"  target="_blank"><div class="setp">
+		 <img src="http://media.decathlon.tw/media/wysiwyg/TW_landingpage/swim/child_swim18_07.png" alt="">
+			 <p style=" color:#2e2e2e">游泳啟蒙浮力棒<br><span style="font-weight:bold; color: #0082c3; font-size: 28px;line-height: 1.2;">NT$99</span></p>
+		</div></a>	
+		<a href="https://www.decathlon.tw/zh/swimming-c107844.html#model=8335573"  target="_blank"><div class="setp">
+		 <img src="http://media.decathlon.tw/media/wysiwyg/TW_landingpage/swim/child_swim18_05.png" alt="">
+			<p style=" color: #2e2e2e">兒童充氣游泳背心<br><span style="font-weight:bold; color: #0082c3; font-size: 28px;line-height: 1.2;">NT$299</span></p>
+		</div></a>
+		 <a href="https://www.decathlon.tw/zh/swimming-c105557.html#model=8385501"  target="_blank"><div class="setp">
+		 <img src="http://media.decathlon.tw/media/wysiwyg/TW_landingpage/swim/child_swim18_06.png" alt="">
+			 <p style=" color: #2e2e2e">兒童多功能浮力衣<br><span style="font-weight:bold; color: #0082c3; font-size: 28px;line-height: 1.2;">NT$499</span></p>
+		</div></a>
+	 </div>
+	</section>
+	<!-----product area------>
+	<section class="prodwrap">
+
+ 	<table>
+ 	<tr>
+ 		<td>
+ 
+ 
+ <a href="https://www.decathlon.tw/zh/swimming-c125383.html#model=8403759"  target="_blank" class="panoply-slide-img">
+ 	<div class="prod3">
+ 		<img  class="img-lazyload loaded"src="https://media.decathlon.tw/media/catalog/product/cache/10/image/438x/9df78eab33525d08d6e5fb8d27136e95/d/5/d5e26d4d-15bd-4b9e-8c9f-ba454e97fb5a_8403759.jpg">
+ 		<p>兒童浮力背心 <br><span class="price2">NT$499</span></p>
+ 	</div>
+ </a>
+ <a href="https://www.decathlon.tw/zh/swimming-c126522.html"  target="_blank" class="panoply-slide-img">
+ 	<div class="prod3">
+ 		<img class="img-lazyload loaded" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/438x/9df78eab33525d08d6e5fb8d27136e95/8/0/80619bb8-4a56-4026-9fbf-f2a6f1c16634_8388630.jpg">
+ 		<p>穩定輔助浮板<br><span class="price2">NT$299</span></p>
+ 	</div>
+ </a>
+ <a href="https://www.decathlon.tw/zh/swimming-c116358.html#model=8574891"  target="_blank" class="panoply-slide-img">
+ 	<div class="prod3">
+ 		<img  class="img-lazyload loaded"src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/e/0/e0f366cc-6ca5-4b29-b170-df3df8fdd497_8574891.jpg">
+ 		<p>兒童游泳啟蒙臂圈(2入) <br><span class="price2">NT$199</span></p>
+ 	</div>
+ </a>
+ <a href="https://www.decathlon.tw/zh/swimming-c116358.html#model=8385497"   target="_blank" class="panoply-slide-img">
+ 	<div class="prod3">
+ 		<img class="img-lazyload loaded" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/438x/9df78eab33525d08d6e5fb8d27136e95/b/4/b40afb1360cf49d58f28964c97573028_8385497.jpg">
+ 		<p>舒適材質游泳臂圈(2入) <br><span class="price2">NT$199</span></p> 	</div>
+ </a>
+
+ </td>
+ 	</tr>
+ </table>
+				   
+</section>
+	<!-----#3------>
+	<section class="dset swim" id="s3">
+		<div style="width: 10px; height: 15px;"></div>
+	 <h2 class="title-1 panoply-title">
+				<div class="panoply-title-big" style=" color: #0082c3">盡情探索</div>
+				<div class="title-1-line panoply-title-line"></div>
+				<div class="title-1-sub panoply-title-sub mobilesubtxt" style=" color: #2e2e2e">
+					學習憋氣，讓腳離開池底，<br>並開始潛入水中! <br>在這個階段，寶貝已經能優游自如了呢!
+				</div>
+	 </h2>
+	<div style="width: 10px; height: 10px;"></div>
+	 <div class="setp_wrap">
+		<a href="https://www.decathlon.tw/zh/water-polo-c68923.html#model=8271706"  target="_blank"><div class="setp">
+		 <img src="https://media.decathlon.tw/media/wysiwyg/TW_landingpage/swim/190617pro05.png">
+			<p style=" color: #2e2e2e">直徑15cm 戲水球<br><span style="font-weight:bold; color: #0182c3; font-size: 28px;line-height: 1.2;">NT$129</span></p>
+		</div></a>
+		 <a href="https://www.decathlon.tw/zh/water-polo-c88649.html#model=8306279"  target="_blank"><div class="setp">
+		 <img src="https://media.decathlon.tw/media/wysiwyg/TW_landingpage/swim/190617pro06.png">
+			<p style=" color: #2e2e2e">直徑15cm 戲水球<br><span style="font-weight:bold; color: #0182c3; font-size: 28px;line-height: 1.2;">NT$129</span></p>
+		</div></a>
+		 <a href="https://www.decathlon.tw/zh/water-polo-c124966.html#model=8543551"  target="_blank"><div class="setp">
+		 <img src="https://media.decathlon.tw/media/wysiwyg/TW_landingpage/swim/190617pro07.png">
+		 <p style=" color: #2e2e2e">直徑20cm 戲水球<br><span style="font-weight:bold; color: #0182c3; font-size: 28px;line-height: 1.2;">NT$149</span></p>
+		</div></a>
+		 <a href="https://www.decathlon.tw/zh/swimming-c121599.html"  target="_blank"><div class="setp">
+		 <img src="../img/cs-05.png">
+		 <p style=" color: #2e2e2e">小型戲水池泳池<br><span style="font-weight:bold; color: #0182c3; font-size: 28px;line-height: 1.2;">NT$249</span></p>
+		</div></a>	
+	 </div>
+	</section>
+	
+	<section class="wcball">
+	 <h2 class="title-1 panoply-title black">
+				<div class="panoply-title-big">嬰幼兒戲水</div>
+				<div class="title-1-line panoply-title-line"></div>
+				<div class="title-1-sub panoply-title-sub">
+				 幼兒拋棄式尿布 | 充氣戲水池 | 各式幼兒游泳配件
+				</div>
+	 </h2>
+		<a href="https://www.decathlon.tw/zh/swimming-acc-baby" target="_blank"><img src="http://media.decathlon.tw/media/wysiwyg/TW_landingpage/swim/child_swim18_baby.png" alt=""></a>
+	 <!------BUY BTN------>
+	<a href="https://www.decathlon.tw/zh/swimming-acc-baby" target="_blank" class="btn yel">
+		<div class="btn-txt">了解更多</div>
+		<div class="btn-arrow">
+			<svg class="arrow icon-keyboard_arrow_right"><use xlink:href="#icon-keyboard_arrow_right"></use>
+				<defs>
+				<symbol id="icon-keyboard_arrow_right" viewBox="0 0 24 24">
+				<title>keyboard_arrow_right</title>
+				<path d="M8.578 16.359l4.594-4.594-4.594-4.594 1.406-1.406 6 6-6 6z"></path>
+				</symbol>
+				</defs>
+			</svg>
+		</div>  
+	</a>
+	</section>
+	
+	<!-----product area------>
+	<section class="prodwrap" style=" padding-top: 50px;"  id="s4">
+		<h2 class="title-1 panoply-title black">
+				<div class="panoply-title-big">兒童泳裝推薦</div>
+				<div class="title-1-line panoply-title-line"></div>
+				<div class="title-1-sub panoply-title-sub">
+					抗氯、舒適，在游泳池或戶外探索玩水的樂趣。
+				</div>
+	 </h2>
+ 	<table>
+ 	<tr>
+ 		<td>
+ 
+ 
+ <a href="https://www.decathlon.tw/zh/swimming-c105142.html"  target="_blank" class="panoply-slide-img">
+ 	<div class="prod4">
+ 		<img class="img-lazyload loaded" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/a/3/a36b51d6-2483-43f0-b79a-0130f8e0824c_8543122.jpg">
+ 		<p>【女童】<br>兩件式游泳上衣<br><span class="price2">NT$99</span></p>
+ 	</div>
+ </a>
+ <a href="https://www.decathlon.tw/zh/swimming-c111390.html#model=8578603"  target="_blank" class="panoply-slide-img">
+ 	<div class="prod4">
+ 		<img  class="img-lazyload loaded"src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/2/d/2deb4024-de10-4d79-a46a-819a90b37a16_8578603.jpg">
+ 		<p>【女童】<br>連身游泳衣<br><span class="price2">NT$199</span></p>
+ 	</div>
+ </a>
+ <a href="https://www.decathlon.tw/zh/swimming-c108010.html#model=8306929"  target="_blank" class="panoply-slide-img">
+ 	<div class="prod4">
+ 		<img  class="img-lazyload loaded"src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/4/6/4600217d7f8d42aa8bce534e74318474_8306929.jpg">
+ 		<p>【女童】<br>游泳連身泳衣<br><span class="price2">NT$129</span></p>
+ 	</div>
+ </a>
+ <a href="https://www.decathlon.tw/zh/swimming-c102567.html#model=8560052"  target="_blank" class="panoply-slide-img">
+ 	<div class="prod4">
+ 		<img class="img-lazyload loaded" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/1/5/15836fc9-f668-4754-9355-85c1eff4aced_8560052.jpg">
+ 		<p>【女童】<br>高抗氯O型背部連身泳衣<br><span class="price2">NT$499</span></p>
+ 	</div>
+ </a>
+ 
+
+ <a href="https://www.decathlon.tw/zh/swimming-c307874.html#model=8553144"  target="_blank" class="panoply-slide-img">
+ 	<div class="prod4">
+ 		<img class="img-lazyload loaded" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/a/2/a25dc193-43df-432c-9e19-4c177c936221_8553144.jpg">
+ 		<p>【男童】<br>抗氯舒適游泳四角泳褲<br><span class="price2">NT$129</span></p>
+ 	</div>
+ </a>
+ <a href="https://www.decathlon.tw/zh/swimming-c112929.html#model=8547442"  target="_blank" class="panoply-slide-img">
+ 	<div class="prod4">
+ 		<img class="img-lazyload loaded" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/a/1/a173963c-0822-43a8-94aa-84e9c427448a_8547442.jpg">
+ 		<p>【男童】<br>抽繩游泳褲<br><span class="price2">NT$349</span></p>
+ 	</div>
+ </a>
+  <a href="https://www.decathlon.tw/zh/swimming-c107785.html#model=8542211"  target="_blank" class="panoply-slide-img">
+ 	<div class="prod4">
+ 		<img class="img-lazyload loaded" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/d/2/d27ceb8a-0cd4-42fd-b381-8aedceebebe3_8542211.jpg">
+ 		<p>【男童】<br>高抗氯游泳褲<br><span class="price2">NT$499</span></p>
+ 	</div>
+ </a>
+ <a href="https://www.decathlon.tw/zh/swimming-c113209.html#model=8484313"  target="_blank" class="panoply-slide-img">
+ 	<div class="prod4">
+ 		<img class="img-lazyload loaded" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/8/9/89794f97-b941-4fed-84d4-bd8e6253d02c_8484313.jpg">
+ 		<p>【男童】<br>高抗氯三角泳褲<br><span class="price2">NT$249</span></p>
+ 	</div>
+ </a>
+			
+ <a href="https://www.decathlon.tw/zh/swimming-c126462.html"  target="_blank" class="panoply-slide-img">
+ 	<div class="prod4">
+ 		<img class="img-lazyload loaded" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/d/d/dd589cfa-f28f-49b6-9a94-c4491aab484e_8484356.jpg">
+ 		<p>【嬰幼兒】<br>長袖連身泳裝<br><span class="price2">NT$399</span></p>
+ 	</div>
+ </a>
+ <a href="https://www.decathlon.tw/zh/swimming-c59567.html#model=8553879"  target="_blank" class="panoply-slide-img">
+ 	<div class="prod4">
+ 		<img class="img-lazyload loaded" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/4/0/4097f80e-d7dd-4de4-a100-fe0a09aa6480_8553879.jpg">
+ 		<p>【兒童】<br>防曬連身泳衣<br><span class="price2">NT$499</span></p>
+ 	</div>
+ </a>
+  <a href="https://www.decathlon.tw/zh/swimming-c58202.html#model=8529304"  target="_blank" class="panoply-slide-img">
+ 	<div class="prod4">
+ 		<img class="img-lazyload loaded" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/1/1/11f6bd34-a860-4867-a1a3-e656770ed418_8529304.jpg">
+ 		<p>【嬰幼兒】<br>抗uv衝浪運動帽子<br><span class="price2">NT$199</span></p>
+ 	</div>
+ </a>
+ <a href="https://www.decathlon.tw/zh/swimming-c307002.html"  target="_blank" class="panoply-slide-img">
+ 	<div class="prod4">
+ 		<img class="img-lazyload loaded" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/7/d/7de0201f-6e72-4fec-a81f-04f9a2ecdc94_8544836.jpg">
+ 		<p>【6-12kg】<br>幼兒用拋棄式游泳啟蒙尿布<br><span class="price2">NT$349</span></p>
+ 	</div>
+ </a>
+ </td>
+ 	</tr>
+ </table>
+				   
+</section>
+	
+	<!-----footer---->
+	<section class="wcfoot">
+	 <a href="https://www.decathlon.tw/zh/kids-swimming-suits?p=1" target="_blank">
+	 	<p>挑選更多兒童泳裝 >></p>
+	 </a>
+	</section>
+	
+	<!-- JS -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script>
+	/* slidedowm */
+$(function(){
+	
+	$("#goa").click(function(){
+
+		$("html,body").animate({scrollTop:600},900);
+
+		//$("html,body").animate({scrollTop:0},900,"easeOutBounce");
+
+		return false;
+
+	});
+
+});
+	</script>
+	<!--------------------------------------------------------------------------------------------->
+
+<div id="fb-root">&nbsp;</div>
+<p>
+<script type="text/javascript">// <![CDATA[
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=119686551468562&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+// ]]></script>
+</p>
+<!--Share button END-->
+</body>
+</html>

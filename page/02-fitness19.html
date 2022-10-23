@@ -1,0 +1,610 @@
+<!doctype html>
+<meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta content="https://media.decathlon.tw/media/wysiwyg/TW_landingpage/running/190131sr_fb.jpg" />
+<p><link href="https://media.decathlon.tw/media/wysiwyg/TW_landingpage/running/190131sr_fb.jpg" rel="image_src" type="image/jpg" /> <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" type="text/css" /> <link href="https://www.decathlon.fr/ecfr/static/2017-04-12-lp-hiking-kids/css/min.hikingkidsok.css" rel="stylesheet" type="text/css" /></p>
+<!---ga use--->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.decathlon.tw/js/ga/gaAltima.js"></script>
+<!---ga use end--->
+<title>健身從局部到全身 我們都幫你準備好了</title>
+<style><!--
+.mobile{ display:none !important;}
+a{ text-decoration: none !important}
+html, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: "Roboto Condensed", 微軟正黑體, sans-serif; !important;
+}
+body{width: 100%; margin: 0!important; padding: 0!important; overflow-x: hidden !important; font-family: "Roboto Condensed", 微軟正黑體, sans-serif;}
+.header{width: 100%; background: url(https://media.decathlon.tw/media/wysiwyg/TW_landingpage/fitness-all/190315bg.jpg) no-repeat center;padding-bottom: 60%;-webkit-background-size: cover;background-size: cover;background-color: #e20c18;}
+.tlogo{ position:absolute; top:10px; left:10px; z-index:999; text-align: center;}		
+
+@keyframes in-delay {
+from {opacity: 0;}
+to {opacity: 1;}
+}
+/*****MENU*****/
+.menu{width:100%; height: 180px; margin:0; padding: 60px 0 65px 0; background: #e20c18;}
+.menu_wrap{display: flex;width: 1000px; margin:10px auto 0; justify-content:space-around; }
+.menu_more{display: none !important;}
+/******MOUSE******/
+.mou{ position:absolute; margin:0px 0 0 50% !important; bottom: 10px;}
+@keyframes mouse_boucle {
+    0%   { opacity:0; }
+	30%  { opacity:1; }
+	40%  { transform: translateY(10px);opacity:1; }
+	80%  { transform: translateY(10px);opacity:1; }
+	100% { transform: translateY(10px);opacity:0; }
+}
+@keyframes mouse_fle {
+     0%  { opacity:0; }
+	30%  { opacity:1; }
+	40%  { transform: translateY(15px);opacity:1; }
+	80%  { transform: translateY(15px);opacity:1; }
+	100% { transform: translateY(15px);opacity:0; }
+}
+
+.cursor_animate .mouse {
+   width: 100%;
+    height: 46px;
+    background-image: url(https://cdn.rawgit.com/saha1022/3c620f5e38941273bf48dbbe1f27296e/raw/0c4f5182e9f119bd2a8274371b5c8f1a262ddc34/icon_mouse.svg);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.mouse {
+    animation-name: mouse_boucle;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
+.cursor_animate {
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-15px);
+    cursor: pointer;
+}
+.cursor_animate .fle {
+    width: 100%;
+    height: 30px;
+    background-image: url(https://cdn.rawgit.com/saha1022/3c620f5e38941273bf48dbbe1f27296e/raw/0c4f5182e9f119bd2a8274371b5c8f1a262ddc34/picto_dfle.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+.fle {
+    animation-name: mouse_fle;
+    animation-duration: 2s;
+    animation-delay: 2.2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
+/* fitbut To Right */
+.fitbut-to-right{font-family: 'Roboto', sans-serif,微軟正黑體;margin:2em 1.5em 1em;padding: 1em;cursor: pointer;background: #232323;text-decoration: none;color: #fff;width:250px;height:20px;line-height:20px;text-align:center;font-weight: bold;font-size: 1.4em;display: inline-block;
+    /* Prevent highlight colour when element is tapped */
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+  /* Smooth fonts */
+  -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+.fitbut-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.fitbut-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #feea29;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.fitbut-to-right:hover, .fitbut-to-right:focus, .fitbut-to-right:active {
+  color: #232323;font-weight: bold;
+}
+.fitbut-to-right:hover:before, .fitbut-to-right:focus:before, .fitbut-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+/*topban*/
+.topban{background-color: #000;width: 100%; height: 400px; position: relative;}
+.topban1{background-color: #000;width: 100%; height: 200px; position: relative;}
+.topban p{ width: 42%;padding: 8px 0 0 12%; color: #000; font-size: 18px;text-align: left; line-height: 1.4; position: relative;}
+.title_img1{background-image: url(https://media.decathlon.tw/media/wysiwyg/TW_landingpage/fitness-all/190315title1.jpg);padding-top: 27%;-webkit-background-size: cover;background-size: cover;background-color: #000;}
+.title_img2{background-image: url(https://media.decathlon.tw/media/wysiwyg/TW_landingpage/fitness-all/190315title2.jpg);padding-top: 27%;-webkit-background-size: cover;background-size: cover;background-color: #000;}
+.title_img3{background-image: url(https://media.decathlon.tw/media/wysiwyg/TW_landingpage/fitness-all/190315title3.jpg);padding-top: 27%;-webkit-background-size: cover;background-size: cover;background-color: #000;}
+.title_img4{background-image: url(https://media.decathlon.tw/media/wysiwyg/TW_landingpage/fitness-all/190315title4.jpg);padding-top: 18%;-webkit-background-size: cover;background-size: cover;background-color: #000;}
+.toptitle h3{ width: 100%; font-size:36px; color: #feea29; line-height: 1; font-weight: bold; text-align: center;padding-bottom: 10px;}
+.toptitle h3::first-line{ font-size: 36px;position: relative;}
+.toptitle p{ width: 100%; font-size:22px; color: #feea29; line-height: 1; font-weight: bold; text-align: center;padding-bottom: 10px;}	
+
+/*****PRODUCT*****/
+.prodwrap{ width:100%; padding:30px 0 30px; position: relative;background-color: #000;}
+.prodwrap table{ padding:0; margin:auto; width:1050px !important; border-spacing:0; border:0;}
+.prod{width:240px; margin-top:20px; margin-left:18px;float:left; background:#FFF; height:345px;}
+.prod img{width:90%; margin:5%;}
+.prod p{ margin:0; line-height:22px; font-size:18px; text-align:center; color:#333;font-family:微軟正黑體;}
+.prod1 p{ margin:0; line-height:22px; font-size:16px; text-align:center; color:#333;font-family:微軟正黑體;}
+.price{ font-weight: 500; font-family: "Roboto Condensed", sans-serif; color: #0082c3; font-size: 30px; line-height: 1.4;font-weight: bold;}
+.fit-item{border-bottom:5px solid #fff;transition:0.5s;}
+.fit-item:hover{border-bottom:5px solid #ff1828; transition:0.5s;}
+/*****see-more-buttom*****/
+.hiking_center { min-width: 100% !important;background-color: #000;} 
+#hiking_decouvrez:before{display: none; !important;}
+#hiking_decouvrez:after{display: none; !important;}         
+a.hiking_btn_yellow.vbig{width:190px !important;}
+a.hiking_btn_yellow.vbig{position:relative;display:block;height:35px;line-height:35px;background:linear-gradient(to bottom,#fef63a 0,#eec523 100%);font-size:16px;color:#1e1e20;overflow:hidden;text-indent:16px;box-sizing:border-box;}
+a.hiking_btn_yellow.vbig:after {  top: 11px !important;}
+.backToTop{ display:none !important;}
+--></style>
+<style><!--
+/*FB*/
+#rafLoadMessage{ display: none;}
+.fb-like{margin:50px 0 0 91%;  z-index: 999;}
+/*Logo*/
+.logo{ margin:0; padding:1%; background:rgba(0, 0, 0, 0.0); width:98%; height:40px; position: fixed;z-index: 999;}
+.logo img{float:left;}
+.logo p{float:right; font-size:18px; line-height:40px; margin:0; padding:0; color:#fff;}
+.logo p a{ color:#fff;}
+.logo p a:hover{ color:#feea29;}
+--></style>
+<style><!--
+/********************************1024********************************/
+@media screen and (max-width:1024px){
+.fb-like{margin:50px 0 0 85%;  z-index: 999;}
+/******MOUSE******/ 
+.mou{ position:absolute; margin:0px 0 0 50% !important; bottom: 30px;}
+/*****MENU*****/
+.menu{width:100%; height: 150px; margin:0; padding: 35px 0 65px 0; background: #e20c18;}
+.menu_wrap{display: flex;width: 900px; margin:10px auto 0; justify-content:space-around; }
+.menu_more{display: none !important;}
+/* fitbut To Right */
+.fitbut-to-right{font-family: 'Roboto', sans-serif,微軟正黑體;margin:2em 1.5em 1em;padding: 1em;cursor: pointer;background: #232323;text-decoration: none;color: #fff;width:210px;height:20px;line-height:20px;text-align:center;font-weight: bold;font-size: 1.4em;}
+/*****PRODUCT*****/
+.prodwrap{ width:100%; padding:30px 0 30px; position: relative;background-color: #000;}
+.prodwrap table{ padding:0; margin:auto; width:918px !important; border-spacing:0; border:0;}
+.prod{width:210px; margin-top:20px; margin-left:18px;float:left; background:#FFF; height:295px;}
+.prod img{width:90%; margin:5%;}
+.prod p{ margin:0; line-height:18px; font-size:18px; text-align:center; color:#333;font-family:微軟正黑體;}
+.prod1 p{ margin:0; line-height:18px; font-size:16px; text-align:center; color:#333;font-family:微軟正黑體;}
+.price{ font-weight: 500; font-family: "Roboto Condensed", sans-serif; color: #0082c3; font-size: 25px; line-height: 1.4;font-weight: bold;}
+/*topban*/
+.topban{background-color: #000;width: 100%; height: 270px; position: relative;}
+.topban1{background-color: #000;width: 100%; height: 200px; position: relative;}
+.toptitle h3{ width: 100%; font-size:36px; color: #feea29; line-height: 1; font-weight: bold; text-align: center;padding-bottom: 10px;}
+.toptitle h3::first-line{ font-size: 36px;position: relative;}
+.toptitle p{ width: 100%; font-size:22px; color: #feea29; line-height: 1; font-weight: bold; text-align: center;padding-bottom: 10px;}  
+}
+/********************************768********************************/
+@media screen and (max-width:768px){
+.fb-like{margin:50px 0 0 85%;  z-index: 999;}
+/******MOUSE******/ 
+.mou{ display: none !important;}
+/*****MENU*****/
+.menu{width:100%; height: 100px; margin:0; padding: 35px 0 65px 0; background: #e20c18;}
+.menu_wrap{display: flex;width: 675px; margin:30px 0 100px; justify-content:space-around;}
+.menu_more{ display: inline-block !important;width: 180px; height: 50px; background: #232323; text-align: center; line-height: 50px; font-size: 1.4em; color: #fff;font-weight: bold;}
+.menu_more:hover{background-color:#feea29;color: #232323;}
+/* fitbut To Right */
+.fitbut-to-right{display:none !important;}
+ /*****PRODUCT*****/
+.prodwrap{ width:100%; padding:30px 0 30px; position: relative;background-color: #000;}
+.prodwrap table{ padding:0; margin:auto; width:680px !important; border-spacing:0; border:0;}
+.prod{width:160px; margin-top:10px; margin-left:10px;float:left; background:#FFF; height:245px;}
+.prod img{width:90%; margin:5%;}
+.prod p{ margin:0; line-height:20px; font-size:15px; text-align:center; color:#333;font-family:微軟正黑體;}
+.prod1 p{ margin:0; line-height:20px; font-size:15px; text-align:center; color:#333;font-family:微軟正黑體;}
+.price{ font-weight: 500; font-family: "Roboto Condensed", sans-serif; color: #0082c3; font-size: 23px; line-height: 1.4;font-weight: bold;}
+.fit-item{border-bottom:none !important;}
+.fit-item:hover{border-bottom:none !important;}
+/*topban*/
+.topban{background-color: #000;width: 100%; height: 200px; position: relative;}
+.topban1{background-color: #000;width: 100%; height: 110px; position: relative;}
+.toptitle h3{ width: 100%; font-size:30px; color: #feea29; line-height: 1; font-weight: bold; text-align: center;padding-bottom: 10px;}
+.toptitle h3::first-line{ font-size: 30px;position: relative;}
+.toptitle p{ width: 100%; font-size:18px; color: #feea29; line-height: 1; font-weight: bold; text-align: center;padding-bottom: 10px;}  
+a.hiking_btn_yellow.vbig{width:190px !important;}
+a.hiking_btn_yellow.vbig:after {  top: 7.5px !important;}
+	}
+/********************************576********************************/
+@media screen and (max-width:576px){
+.logo{display:none; !important;}
+header{display:none;}
+.tlogo{ position:absolute; margin:10px auto; z-index:999; text-align: center !important;}
+.header{background: url(https://media.decathlon.tw/media/wysiwyg/TW_landingpage/fitness-all/190315bg-m.jpg) no-repeat center top;width: 100%;padding-bottom: 150%;-webkit-background-size: cover;background-size: cover;background-color: #e20c18;}
+/******MOUSE******/ 
+.mou{ display: none !important;}  
+.mobi-toolbar{display:none;}
+#rafLoadMessage{display:none;}
+.backToTop{ display:none;}
+.mobile{display: block !important;}
+.fb-like{display:block !important;}	
+.tt{width: 400px; font-family: '微軟正黑體'; font-size: 19px !important; line-height: 1.6 !important;}
+/*****MENU*****/
+.menu{width:100%; height: 200px; margin:0; padding: 35px 0 60px 0; background: #e20c18;}
+.menu_wrap{display: flex;width: 90%; margin:10px auto 0 auto; justify-content:space-around; flex-direction: column; }
+.menu_more{ display: inline-block !important;width: 100%; height: 50px; background: #232323; text-align: center; line-height: 50px; font-size: 1.4em; color: #fff;margin:10px 0 10px 0; font-weight: bold;}
+.menu_more:hover{background-color:#feea29;color: #232323;}
+
+/* fitbut To Right */
+.fitbut-to-right{display:none !important;}
+/*topban*/
+.topban{background-color: #000;width: 100%; height: 113px; position: relative;}
+.topban1{background-color: #000;width: 100%; height: 67px; position: relative;}
+.toptitle h3{ width: 100%; font-size:28px; color: #feea29; line-height: 1; font-weight: bold; text-align: center;padding-bottom: 10px;}
+.toptitle h3::first-line{ font-size: 28px;position: relative;}
+.toptitle p{ width: 100%; font-size:16px; color: #feea29; line-height: 1; font-weight: bold; text-align: center;padding-bottom: 10px;}  
+ /*****PRODUCT*****/
+.prodwrap{ width:100%; position: relative;background-color: #000;}
+.prodwrap table{ padding:0; margin:auto; width:375px !important; border-spacing:0; border:0;margin-bottom: 30px;}
+.prod{width:170px; margin-top:10px; margin-left:10px;float:left; background:#FFF; height:265px;}
+.prod img{width:90%; margin:5%;}
+.prod p{ margin:0; line-height:20px; font-size:15px; text-align:center; color:#333;font-family:微軟正黑體;}
+.prod1 p{ margin:0; line-height:20px; font-size:15px; text-align:center; color:#333;font-family:微軟正黑體;}
+.price{ font-weight: 500; font-family: "Roboto Condensed", sans-serif; color: #0082c3; font-size: 23px; line-height: 1.4;font-weight: bold;}
+.fit-item{border-bottom:none !important;}
+.fit-item:hover{border-bottom:none !important;}
+.hiking_center { width: 99% !important;background-color: #000;} 
+a.hiking_btn_yellow.vbig{width:190px !important;position:absolute; }
+a.hiking_btn_yellow.vbig:after {top: 7.5px !important;}
+}
+--></style>
+<div class="logo" style="z-index: 999;">
+<p class="tt" style="font-family: 微軟正黑體 !important; width: 176px; background-color: rgba(128,128,128,0.7); padding-left: 10px;border-radius: 4px;"><a href="https://www.decathlon.tw/zh/decathlon/store/search/" target="_blank"> 全台門市</a> | <a href="#mm">回最上層</a></p>
+<!--Share button-->
+<div class="fb-like" style="margin-top: 10px;" data-href="https://www.decathlon.tw/zh/190315page" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true">&nbsp;</div>
+<!--Share button end-->
+</div>
+<!--logo end-->
+<p><a href="https://www.decathlon.tw"><img class="tlogo" alt="" src="https://static.decathlon.tw/skin/frontend/enterprise/decathlon_tw/img/logo.png" /></a></p>
+<section id="mm" class="header">
+<section class="mou" id="goa">
+<div class="cursor_animate animate">
+<div class="mouse"></div>
+<div class="fle"></div>
+</div>
+</section>
+</section>
+<section class="menu">
+<div class="menu_wrap">
+<a href="#s1"><div class="fitbut-to-right">重量訓練</div></a>
+<a href="#s2"><div class="fitbut-to-right">交叉有氧訓練</div></a>
+<a href="#s3"><div class="fitbut-to-right">服裝/配件</div></a>
+<a href="#s1"><div class="menu_more">重量訓練</div></a>
+<a href="#s2"><div class="menu_more">交叉有氧訓練</div></a>
+<a href="#s3"><div class="menu_more">服裝/配件</div></a>
+</div>
+</section>
+<!--重量訓練-->
+<section id="s1">
+<div class="topban animscroll_zoom_top">
+<div class="title_img1"></div>
+</div>
+</section>
+<section class="prodwrap">
+<div class="toptitle">
+<h3>| 重量訓練 |</h3>
+<p>塑造身形，追求自我！</p>
+</div>	
+<table>
+<tbody>
+<tr>
+<td>
+<a href="https://www.decathlon.tw/zh/decathlon/search/result/?q=8399414+8353799+8353800+8353801+8399333" target="_blank">	
+<div class="prod fit-item"><img alt="" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/f/9/f935d771e35644c28b3f6e906f6006c2_8353799.jpg" />
+<p>單入<br />六角啞鈴系列<br /><span class="price">NT$249</span><span style="font-size: 12px;">起</span></p>
+</div>
+</a>
+<a href="https://www.decathlon.tw/zh/fitness-c327173.html" target="_blank">	
+<div class="prod fit-item"><img alt="" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/b/7/b7caa87e-db39-45ae-b9f9-a4ca09460ac5_8600004.jpg" />
+<p>10公斤<br />重訓啞鈴組<br /><span class="price">NT$699 </span></p>
+</div>
+</a>	
+<a href="https://www.decathlon.tw/zh/fitness-c327191.html" target="_blank">	
+<div class="prod fit-item"><img alt="" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/5/6/5641b4a8-f523-42a3-aa8e-2b72bc5d3f9e_8600005.jpg" />
+<p>50公斤<br />重訓啞鈴組<br /><span class="price">NT$3999</span></p>
+</div>
+</a>
+<a href="https://www.decathlon.tw/zh/fitness-c116834.html" target="_blank">	
+<div class="prod fit-item"><img alt="" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/5/6/5608ecd2-5e14-4466-8154-530a3a1616e0_8379822.jpg" />
+<p>【2入】多功能徒手訓練<br />雙槓撐體器<br /><span class="price">NT$1749</span></p>
+</div>
+</a>	
+<a href="https://www.decathlon.tw/zh/fitness-c90617.html" target="_blank">    
+<div class="prod fit-item"><img alt="" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/6/1/61422fa5-de76-40fc-a433-ad224118c6b9_8380690.jpg" />
+<p>【適用28 mm槓鈴桿】<br />2入 聰明槓片鎖<br /><span class="price">NT$99</span></p>
+</div>
+</a>
+<a href="https://www.decathlon.tw/zh/decathlon/search/result/?q=8289898+1041986+8289899+8289897+8484124+8289896" target="_blank">  
+<div class="prod fit-item"><img alt="" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/0/a/0a78d99b-3c5b-4f13-a586-008628053646_8484124.jpg" />
+<p>重量訓練<br />彎舉槓<br /><span class="price">NT$199</span><span style="font-size: 12px;">起</span></p>
+</div>
+</a>    
+<a href="https://www.decathlon.tw/zh/decathlon/search/result/?q=8388695+8388223+8388222+8388237+8388236+8388696" target="_blank">  
+<div class="prod fit-item"><img alt="" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/a/1/a1dad13c-3993-417a-8a6e-38f64a89d5d9_8388237.jpg" />
+<p>重量訓練<br />橡膠槓片<br /><span class="price">NT$129</span><span style="font-size: 12px;">起</span></p>
+</div>
+</a>
+<a href="https://www.decathlon.tw/zh/fitness-c125808.html" target="_blank">  
+<div class="prod fit-item"><img alt="" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/2/f/2f66895b-ebdc-43eb-ae7c-93b9bfbeab1e_8491829.jpg" />
+<p>多功能<br />握推健腹椅<br /><span class="price">NT$3499</span></p>
+</div>
+</a>  	
+</td>
+</tr>
+</tbody>
+</table> 
+</section>       
+<!--交叉有氧訓練-->
+<section id="s2">
+<div class="topban animscroll_zoom_top">
+<div class="title_img2"></div>
+</div>
+</section>
+<section class="prodwrap">
+<div class="toptitle">
+<h3>| 交叉有氧訓練 |</h3>
+<p>增加新陳代謝，全方位訓練！</p>
+</div>  
+<table>
+<tbody>
+<tr>
+<td>
+<a href="https://www.decathlon.tw/zh/decathlon/search/result/?q=%E5%A3%BA%E9%88%B4" target="_blank">    
+<div class="prod fit-item"><img alt="" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/9/f/9fc7a525-5aa3-4bb6-b182-3c4ca294ec24_8399332.jpg" />
+<p>單入<br />壺鈴<br /><span class="price">NT$349</span><span style="font-size: 12px;">起</span></p>
+</div>
+</a>
+<a href="https://www.decathlon.tw/zh/decathlon/search/result/?q=%E5%85%AC%E6%96%A4%E8%A8%93%E7%B7%B4%E5%BD%88%E5%8A%9B%E5%B8%B6" target="_blank">   
+<div class="prod fit-item"><img alt="" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/5/4/547dc1bb-7b5e-4315-a54d-82cd3c9b4e32_8484822.jpg" />
+<p>多用途<br />訓練彈力帶<br /><span class="price">NT$199</span><span style="font-size: 12px;">起</span></p>
+</div>
+</a>    
+<a href="https://www.decathlon.tw/zh/decathlon/search/result/?q=%E8%B7%B3%E7%B9%A9&page=1&priceorder=desc&special_price=0%20~%20200&QueryCmd=%7B%22QC1%22:%7B%22QT%22:2,%22MetaField%22:%22special_price%22,%22BOP%22:1,%22Operand1%22:%220%22,%22Operand2%22:%22200%22%7D%7D" target="_blank">  
+<div class="prod fit-item"><img alt="" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/c/8/c818f66d-8490-4647-add0-83aa75ae1fcb_8391015.jpg" />
+<p>50公斤<br />啞鈴組<br /><span class="price">NT$39</span><span style="font-size: 12px;">起</span></p>
+</div>
+</a>
+<a href="https://www.decathlon.tw/zh/fitness-c117527.html" target="_blank">  
+<div class="prod fit-item"><img alt="" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/a/1/a11a3504-2bb8-4b66-9ed9-0937933e53c2_8558559.jpg" />
+<p>室內<br />彈跳床<br /><span class="price">NT$1249</span></p>
+</div>
+</a>    
+<a href="https://www.decathlon.tw/zh/fitness-c116005.html" target="_blank">    
+<div class="prod fit-item"><img alt="" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/b/c/bc1af883-8727-409d-90e5-c8eeac067192_8382225.jpg" />
+<p>【2入】滾輪式<br />伏地挺身器<br /><span class="price">NT$499</span></p>
+</div>
+</a>
+<a href="https://www.decathlon.tw/zh/fitness-c121120.html?model=8505065" target="_blank">  
+<div class="prod fit-item"><img alt="" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/8/7/870a1632-3dc3-4a22-a6ce-f9f40cea7e1f_8505065.jpg" />
+<p>附彈力帶<br />台灣製踏步機<br /><span class="price">NT$1499</span></p>
+</div>
+</a>    
+<a href="https://www.decathlon.tw/zh/fitness-c120452.html" target="_blank">  
+<div class="prod fit-item"><img alt="" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/1/2/12ba5f88686445d5a9b7b173fea66e6b_8364829.jpg" />
+<p>家用輕巧<br />健身自行車<br /><span class="price">NT$3499</span></p>
+</div>
+</a>
+<a href="https://www.decathlon.tw/zh/fitness-c127884.html" target="_blank">  
+<div class="prod fit-item"><img alt="" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/d/b/db4b804a-2cc0-4ddd-aa8e-103feff61470_8484396.jpg" />
+<p>6公斤飛輪<br />交叉橢圓機<br /><span class="price">NT$79  99</span></p>
+</div>
+</a>    
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<!--服裝 / 配件-->
+<section id="s3">
+<div class="topban animscroll_zoom_top">
+<div class="title_img3"></div>
+</div>
+</section>
+<section class="prodwrap">
+<div class="toptitle">
+<h3>| 服裝 / 配件 |</h3>
+<p>輕盈 X 透氣 X 親膚</p>
+</div>  
+<table>
+<tbody>
+<tr>
+<td>
+<a href="https://www.decathlon.tw/zh/fitness-c304069.html#model=8517441" target="_blank">    
+<div class="prod fit-item"><img alt="" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/6/4/64461577-bf54-45d0-bd07-8a0dc32c34f9_8517441.jpg" />
+<p>重量訓練<br />背心<br /><span class="price">NT$249</span></p>
+</div>
+</a>
+<a href="https://www.decathlon.tw/zh/combat-sports-c122587.html#model=8367921" target="_blank">   
+<div class="prod fit-item"><img alt="" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/8/3/8321c656-d39d-40e8-9fa4-bb200b9bb9f8_8367921.jpg" />
+<p>拳擊<br />連帽背心<br /><span class="price">NT$499</span></p>
+</div>
+</a>    
+<a href="https://www.decathlon.tw/zh/fitness-c302706.html#model=8529981" target="_blank">  
+<div class="prod fit-item"><img alt="" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/3/c/3c3f5ca0-cb6e-4680-93ec-997ed239ceff_8529981.jpg" />
+<p>男款<br />有氧健身短褲<br /><span class="price">NT$149</span></p>
+</div>
+</a>
+<a href="https://www.decathlon.tw/zh/fitness-c122752.html#model=8484885" target="_blank">  
+<div class="prod fit-item"><img alt="" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/4/5/455bff53-ff76-4cca-92d1-8eccc5e1c25a_8484888.jpg" />
+<p>男款排汗彈性<br />運動短褲<br /><span class="price">NT$499</span></p>
+</div>
+</a>    
+<a href="https://www.decathlon.tw/zh/fitness-c300757.html#model=964412" target="_blank">    
+<div class="prod fit-item"><img alt="" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/c/3/c30a4bfa-38b1-4763-9f62-d7f48f4a057e_964412.jpg" />
+<p>有氧健身<br />T恤<br /><span class="price">NT$299</span></p>
+</div>
+</a>
+<a href="https://www.decathlon.tw/zh/fitness-c300761a.html#model=8549855" target="_blank">  
+<div class="prod fit-item"><img alt="" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/3/3/33c0eac7-1179-4651-86a9-3d8419cdc922_8549855.jpg" />
+<p>有氧健身<br />舒適透氣T恤<br /><span class="price">NT$149</span></p>
+</div>
+</a>    
+<a href="https://www.decathlon.tw/zh/fitness-c310929.html#model=8561658" target="_blank">  
+<div class="prod fit-item"><img alt="" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/2/9/29e4828f-b0c4-41d5-bb84-ba190f5fc4be_8561658.jpg" />
+<p>有氧健身<br />訓練鞋<br /><span class="price">NT$499</span></p>
+</div>
+</a>
+<a href="https://www.decathlon.tw/zh/fitness-c300567.html#model=8405113" target="_blank">  
+<div class="prod fit-item"><img alt="" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/5/4/540aedf1-d9d4-4dd2-b81d-8f109e454cbc_8405113.jpg" />
+<p>有氧健身<br />訓練鞋<br /><span class="price">NT$1499</span></p>
+</div>
+</a>
+<a href="https://www.decathlon.tw/zh/fitness-c7291.html?model=8200579" target="_blank">    
+<div class="prod fit-item"><img alt="" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/8/2/8283cc1a0a414452863082cae526eccd_8200579.jpg" />
+<p>可摺疊<br />健身運動單肩水桶包<br /><span class="price">NT$199</span></p>
+</div>
+</a>
+<a href="https://www.decathlon.tw/zh/fitness-c124461.html?model=8386249" target="_blank">  
+<div class="prod fit-item"><img alt="" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/8/e/8efd65b7-8e58-414a-a11b-466a0c0a29cf_8386249.jpg" />
+<p>可調整<br />重量訓練護腰帶<br /><span class="price">NT$399</span></p>
+</div>
+</a>    
+<a href="https://www.decathlon.tw/zh/fitness-c304140.html#model=8517567" target="_blank">  
+<div class="prod fit-item"><img alt="" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/e/4/e44b6ea9-4418-4b8e-914e-f05c63c71ccb_8517567.jpg" />
+<p>重量訓練<br />手套<br /><span class="price">NT$349</span></p>
+</div>
+</a>
+<a href="https://www.decathlon.tw/zh/fitness-c122241.html" target="_blank">  
+<div class="prod fit-item"><img alt="" src="https://media.decathlon.tw/media/catalog/product/cache/10/image/9df78eab33525d08d6e5fb8d27136e95/1/e/1ed78ee5-73e5-4378-b2c1-daf5a1ea0d78_8385672.jpg" />
+<p>【2入】槓鈴重訓<br />輔助拉力帶<br /><span class="price">NT$249</span></p>
+</div>
+</a>    
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<!-- FOOTER -->
+<section>
+<div class="topban1">
+<div class="title_img4"></div>
+</div>
+</section>
+<!---mobile footer--->
+<section class="mobile">
+<style>
+/****store-link****/
+.store-link{clear:left; font-size:16px; line-height:30px; width:100%; margin:0 0px 0 0px; height:auto; background:#D4D4D4; text-align:center; padding:0px 0 20px 0;}
+.store-link a{ text-decoration:none; transition:.2s;}
+.store-link a:hover{color:#F60;}
+/***share****/
+.share{ background:#3c3c3c; height:70px; width:100%; margin:0 0 0 0px;}
+.share table{width:calc(100% - 1px);}
+.share td{ vertical-align:middle;}
+.share td p{ display:inline-block; line-height:20px; font-size:14px; color:#fff; font-family:微軟正黑體; letter-spacing:1px;width: auto !important;margin: 15px 0 0 0 !important;}
+.share td img{width:50px !important; margin:10px; display:inline-block; float:left;}
+</style>
+<div class="store-link" >
+<table style="width:100%;">
+<tbody><tr>
+<td style="padding:20px; text-align:center; vertical-align:middle;"><img src="https://media.decathlon.tw/media/wysiwyg/find_store/local01.jpg" width="280px" style="margin: auto;"></td>
+</tr>
+<tr>
+<td style="padding: 0 20px 0 20px; vertical-align:middle; text-align:center; line-height:30px;">
+門市資訊:<br> <a href="https://www.decathlon.tw/zh/decathlon/store/detail/taiwan-neihu-store">台北內湖店</a> | <a href="https://www.decathlon.tw/zh/decathlon/store/detail/taiwan-zhonghe-store">新北中和店</a> |  <a href="https://www.decathlon.tw/zh/decathlon/store/detail/taibei-bade-store">桃園八德店</a> <br> <a href="https://www.decathlon.tw/zh/decathlon/store/detail/taiwan-zhongli-store">桃園中壢</a> |  <a href="https://www.decathlon.tw/zh/decathlon/store/detail/taiwan-nantun-store">台中南屯</a> | <a href="https://www.decathlon.tw/zh/decathlon/store/detail/taiwan-beitun-store">台中北屯</a> |  <a href="https://www.decathlon.tw/zh/decathlon/store/detail/taiwan-chiayi-store">嘉義店</a><br><a href="https://www.decathlon.tw/zh/decathlon/store/detail/taiwan-ximen-store">台南西門店</a> | <a href="https://www.decathlon.tw/zh/decathlon/store/detail/taiwan-rende-store">台南仁德店</a> | <a href="https://www.decathlon.tw/zh/decathlon/store/detail/taiwan-fengshan-store">高雄鳳山店</a> |<br><a href="https://www.decathlon.tw/zh/decathlon/store/detail/taiwan-pingtung-store">屏東店</a>  | <a href="https://www.decathlon.tw/zh/decathlon/store/detail/taipei-guilin-store">台北桂林店</a>
+</td>
+</tr>
+</tbody></table>
+</div>
+
+<!--Share button-->
+<div style="margin:20px auto 20px auto;z-index: 999; width:200px;">
+<table style="width:100%; margin:auto;">
+<tr>
+<td><a href="https://line.naver.jp/R/msg/text/?剛剛在迪卡儂看到這個不錯，推薦給你! https://www.decathlon.tw/zh/190315page"><img src="https://media.decathlon.tw/media/wysiwyg/line-share.png" width="84"></a></td>
+<td><div class="fb-like" data-href="#" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div></td>
+</tr>
+</table>
+</div>
+<!--Share button end-->
+
+<script type="text/javascript">// <![CDATA[
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=119686551468562&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+// ]]></script>
+
+<!--Share button END-->
+
+<div class="share">
+<table>
+<tbody><tr>
+<td style="border-right:1px solid #fff;"><a href="https://www.facebook.com/decathlon.tw" target="_blank"><img src="https://media.decathlon.tw/media/wysiwyg/TW_Homepage/facebook_share.png"><p>Facebook<br>粉絲團</p></a></td>
+<td><a href="https://www.youtube.com/channel/UC3AVKMpLn99DByojHYJooXQ" target="_blank"><img src="https://media.decathlon.tw/media/wysiwyg/TW_Homepage/youtube_share.png"><p>YouTube<br>官方頻道</p></a></td>
+</tr></tbody></table>
+</div>
+</section>
+<!--Share button -->
+<div id="fb-root">&nbsp;</div>
+<p>
+<script type="text/javascript">// <![CDATA[
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=119686551468562&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+// ]]></script>
+</p>
+<script>
+	/* slidedowm */
+$(function(){
+	
+	$("#goa").click(function(){
+
+		$("html,body").animate({scrollTop:600},900);
+
+		//$("html,body").animate({scrollTop:0},900,"easeOutBounce");
+
+		return false;
+
+	});
+
+});
+	</script>
+<!--Share button END-->
+<div>
+<script type="text/javascript" src="https://www.decathlon.fr/js/jquery/jquery-1.10.0.min.js"></script>
+</div>
+<div>
+<script type="text/javascript" src="https://www.decathlon.fr/ecfr/static/2017-04-25-lp-sac-garantie-quechua/v2/js/min.sac.core.js" async=""></script>
+</div>
