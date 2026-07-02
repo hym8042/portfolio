@@ -51,7 +51,7 @@ Main components
 .cd-section {
   min-height: 100%;
   position: relative;
-  padding: 2em 0;
+  padding: 1.5em 0;
 }
 .cd-section:nth-of-type(odd) {
   background-color: #3e3947;
